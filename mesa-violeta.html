@@ -3,12 +3,139 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mesa Violeta</title>
 
-    <link href="css/style.css" rel="stylesheet">
-    
-    <title>Mesa violeta</title>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v3.7.0/mapbox-gl.css" rel="stylesheet">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v3.7.0/mapbox-gl.js"></script>
 </head>
 <body>
-    
+    <a-scene device-orientation-permission-ui="enabled: false">
+        <a-sky  id="sky" src="#point1" rotation="0 -80 0"></a-sky> 
+        <a-assets>
+            <!--Recorrido hacia la entrada-->
+            <img id="point1" src="images/GS__0207_DxO.webp" alt="Imagen 1">
+            <img id="point2" src="images/GS__0208_DxO.webp" alt="Imagen 2">
+            <!--<img id="point3" src="images/GS__0211_DxO.webp" alt="Imagen 3"-->
+            <img id="point3" src="images/GS__0214_DxO.webp" alt="Imagen 4">
+            <img id="point4" src="images/GS__0217_DxO.webp" alt="Imagen 5">
+            <img id="point5" src="images/GS__0218_DxO.webp" alt="Imagen 6">
+            <!--Entrada-->
+            <img id="point6" src="images/GS__0230_DxO.webp" alt="Imagen 7">
+            
+
+
+            <!--Recursos-->
+            <img id="close1" src="images/close1.png" alt="close1">
+            <video id="atras" autoplay loop muted src="images/direction.webm" alt="hotspot"></video>
+            <video id="adelante" autoplay loop muted src="images/adelante.webm" alt="adelante"></video>
+            <video id="video" autoplay loop muted src="images/try.webm"></video>
+            
+        </a-assets>
+
+        <a-entity id="spots" hotspots scale="1 1 1">
+            <a-entity id="group-point1">
+                <a-video class="adelante" spot="linkto:#point2;spotgroup:group-point2" position="0 0.2 -2.5" rotation="90 60 -35" material="opacity:0.9" src="#adelante" geometry="width: 1.8; height: 1.3" look-at="#cam"></a-video>
+
+            </a-entity>
+
+            <a-entity id="group-point2" scale="0 0 0">
+                <a-video class="atras" spot="linkto:#point1;spotgroup:group-point1" rotation="90 60 140" position="0.5 0.5 4" src="#atras" material="opacity:0.7" geometry="width: 2.5; height: 1.5" look-at="#cam"></a-video>
+                <a-video class="adelante" spot="linkto:#point3;spotgroup:group-point3" position="-1 0.3 -4" rotation="90 60 -45" src="#adelante" material="opacity: 0.8" geometry="width:2; height: 1.3" look-at="#cam"></a-video>
+                
+            </a-entity>
+
+            <a-entity id="group-point3" scale="0 0 0">
+                <a-image class="atras" spot="linkto:#point2;spotgroup:group-point3" position="0.5 0.5 4" rotation="90 60 140" src="#atras" material="opacity=0.8" geometry="width:2; height: 1.3" look-at="#cam"></a-image>
+                <a-image class="adelante" spot="linkto:#point4;spotgroup:group-point4" position="-3.5 0.5 -2" rotation="90 60 -105" src="#adelante" material="opacity:0.8" geometry="width:2; height:1.3" look-at="#cam"></a-image>
+            </a-entity>
+            
+            <a-entity id="group-point4" scale="0 0 0">
+                <a-image class="atras" spot="linkto:#point3;spotgroup:group-point3" position="4.5 -0.3 -1.2" rotation="90 80 75" src="#atras" material="opacity=0.8" geometry="width:2; height:1.3" look-at="#cam"></a-image>
+                <a-image class="adelante __web-inspector-hide-shortcut__" spot="linkto:#point5;spotgroup:group-point5" position="0 -0.7 -4" rotation="90 60 -35" src="#adelante" material="opacity:0.8" geometry="width:2; height:1.3" look-at="#cam"></a-image>
+            </a-entity>
+
+            <a-entity id="group-point5" scale="0 0 0">
+                <a-image class="atras" spot="linkto:#point4;spotgroup:group-point4" position="0.5 -0.9 3" rotation="90 60 142" src="#atras" material="opacity:0.8" geometry="width:1.8; height: 1.3" look-at="#cam"></a-image>
+                <a-image class="adelante" spot="linkto:#point6;spotgroup:group-point6" position="-0.8 -0.7 -3.5" rotation="90 60 -40" src="#adelante" material="opacity:0.8" geometry="width:2 ; height:1.3" look-at="#cam"></a-image>   
+            </a-entity>
+            <!--Entra al lugar-->
+            <!--Modificar a partir de aquip-->
+            <a-entity id="group-point6" scale="0 0 0">
+                <a-image class="atras" spot="linkto:#point5;spotgroup:group-point5" position="-14 -0.5 6" rotation="20 80 120" src="#atras" material="opacity=0.8" geometry="width:2.5; height:2.5"></a-image>
+                <a-image class="adelante" spot="linkto:#point7;spotgroup:group-point7" position="-14 -1.5 6" rotation="60 50 75" src="#adelante" material="opacity=0.8" geometry="width:1.9; height:1.7"></a-image>   
+                
+            </a-entity>
+            <a-entity id="group-point7" scale="0 0 0">
+                
+            </a-entity>
+            
+        </a-entity>
+
+
+        <a-entity id="cam" camera position="0 1.6 0" look-controls>
+            <a-entity 
+                cursor="fuse: true; fuseTimeout:2000"
+                geometry="primitive:ring;radiusInner:0.01;radiusOuter:0.02"
+                position="0 0 -1.8"
+                material="shader:flat;color:#ff0000;">
+            </a-entity>
+
+            <a-entity 
+            cursor="rayOrigin: mouse"
+            raycaster="objects: .interactivo"
+            geometry="primitive:ring; radiusInner:0.01; radiusOuter:0.02"
+            position="0 0 -1.8"
+            material="shader:flat; color:#ff0000;">
+        </a-entity>
+
+        <a-image 
+            class="close interactivo" 
+            src="images/casita.png" 
+            position="0.75 0.30 -1.5" 
+            width="0.18" 
+            height="0.18"
+            event-set__click="_event: click; color: #00FF00">
+        </a-image>
+        <a-image 
+            class="menu interactivo" 
+            id="menu" 
+            src="images/menu.png" 
+            position="-0.80 0.30 -1.5" 
+            width="0.20" 
+            height="0.20"
+            event-set__click="_event: click; color: #FF0000">
+            
+        </a-image>
+
+        <a-entity id="opciones" visible="false">
+            <a-entity id="spotMenu" spot="linkto:#point1;spotgroup:group-point1" position="-2 1.1 -1.5" menu-toggle>
+                <a-plane class="interactivo" color="#ffffff" opacity="0.8" width="0.8" height="0.15"></a-plane>
+                <a-text value="Escenario 1" color="black" align="center" width="2"></a-text>
+            </a-entity>
+            <a-entity spot="linkto:#point2;spotgroup:group-point2" position="-2 0.95 -1.5" menu-toggle>
+                <a-plane class="interactivo" color="#ffffff" class="interactivo" opacity="0.8" width="0.8" height="0.15" menu-toggle></a-plane>
+                <a-text value="Escenario 2" color="black" align="center" width="2"></a-text>
+            </a-entity>
+            <a-entity spot="linkto:#point3;spotgroup:#group-point3" position="-2 0.80 -1.5" menu-toggle>
+                <a-plane class="interactivo" color="#ffffff" opacity="0.8" width="0.8" height="0.15"></a-plane>
+                <a-text value="Escenario 3" color="black" align="center" width="2"></a-text>
+            </a-entity>
+            <a-entity spot="linkto:#point4;spotgroup:#group-point4" position="-2 0.65 -1.5" menu-toggle>
+                <a-plane class="interactivo" color="#ffffff" opacity="0.8" width="0.8" height="0.15"></a-plane>
+                <a-text value="Escenario 4" color="black" align="center" width="2"></a-text>
+            </a-entity>
+        </a-entity>
+
+        <a-entity position="-0.40 0.30 -1.5">
+            <a-plane color="#222" opacity="0.6" width="0.4" height="0.12"></a-plane>
+            <a-text id="scene-value" value="Escenario 1" color="white" align="center" width="1.2"></a-text>
+        </a-entity>
+        </a-entity>
+    </a-scene>
+
+    <script src="https://aframe.io/releases/1.6.0/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras/dist/aframe-extras.min.js"></script>
+
+    <script src="js/hotspot.js"></script>
 </body>
 </html>
