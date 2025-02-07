@@ -22,28 +22,8 @@ function init() {
             el.addEventListener('click', function (e) {
                 const sky = document.querySelector('#sky');
                 sky.setAttribute('src', data.linkto);
-                const opcion = document.querySelector('#surgidero, #balandra, #conchalito');
-
-                if(opcion) {
-                    const id = opcion.id;
-                    if(id === "surgidero") {
-                        cambiarTexto(data.linkto.replace('#', ''));
-                    } else if(id === "balandra") {
-                        cambiarTextBal(data.linkto.replace('#', ''));
-                        //reiniciar video
-                        const doctor = document.querySelector('#drAvila');
-                        doctor.currentTime = 0; 
-                        doctor.pause();
-                        const test = document.querySelector('#testimonial');
-                        test.currentTime = 0; 
-                        test.pause();
-                    } else if(id === "conchalito") {
-                        cambiarTextoConAudio(data.linkto.replace('#', ''));
-                    }
-                }
+                cambiarTexto(data.linkto.replace('#', ''));
                 
-                
-
                 const spotComp = document.querySelector('#spots');
                 const currentSpot = this.parentElement.getAttribute('id');
                 spotComp.emit('reloadspot', { newspot: data.spotgroup, currentSpot: currentSpot });
@@ -162,32 +142,8 @@ AFRAME.registerComponent('carousel', {
         this.updateSlide();
     }
 });
-function cambiarTextBal(sceneId) {
-    const scenes = {
-        'pointBal1': 'Escenario 1',
-        'pointBal2': 'Escenario 2',
-        'pointBal3': 'Escenario 3',
-        'pointBal4': 'Escenario 4',
-        'pointBal5': 'Escenario 5'
-    };
 
-    const texto = document.querySelector('#scene-value');
-    texto.setAttribute('value', scenes[sceneId]);
-}
 function cambiarTexto(sceneId) {
-    const scenes = {
-        'point1': 'Escenario 1',
-        'point2': 'Escenario 2',
-        'point3': 'Escenario 3',
-        'point4': 'Escenario 4',
-        'point5': 'Escenario 5'
-    };
-
-    const texto = document.querySelector('#scene-value');
-    texto.setAttribute('value', scenes[sceneId]);
-}
-
-function cambiarTextoConAudio(sceneId) {
     const scenes = {
         'point1': 'Escenario 1',
         'point2': 'Escenario 2',
@@ -196,19 +152,38 @@ function cambiarTextoConAudio(sceneId) {
         'point5': 'Escenario 5',
         'point6': 'Escenario 6',
         'point7': 'Escenario 7',
-        'point8': 'Escenario 8'
+        'point8': 'Escenario 8',
+        'point9': 'Escenario 9',
+        'point10': 'Escenario 10',
+        'point11': 'Escenario 11'
     };
 
     const texto = document.querySelector('#scene-value');
     texto.setAttribute('value', scenes[sceneId]);
-
-    const audioControl = document.querySelector('#audio-control');
-    if (sceneId === 'point4') {
-        audioControl.components.sound.playSound();
-    } else {
-        audioControl.components.sound.stopSound();
-    }
 }
+
+// function cambiarTextoConAudio(sceneId) {
+//     const scenes = {
+//         'point1': 'Escenario 1',
+//         'point2': 'Escenario 2',
+//         'point3': 'Escenario 3',
+//         'point4': 'Escenario 4',
+//         'point5': 'Escenario 5',
+//         'point6': 'Escenario 6',
+//         'point7': 'Escenario 7',
+//         'point8': 'Escenario 8'
+//     };
+
+//     const texto = document.querySelector('#scene-value');
+//     texto.setAttribute('value', scenes[sceneId]);
+
+//     const audioControl = document.querySelector('#audio-control');
+//     if (sceneId === 'point4') {
+//         audioControl.components.sound.playSound();
+//     } else {
+//         audioControl.components.sound.stopSound();
+//     }
+// }
 
 window.addEventListener('load', function () {
     init();
