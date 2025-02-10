@@ -145,17 +145,28 @@ AFRAME.registerComponent('carousel', {
 
 function cambiarTexto(sceneId) {
     const scenes = {
-        'point1': 'Escenario 1',
-        'point2': 'Escenario 2',
-        'point3': 'Escenario 3',
-        'point4': 'Escenario 4',
-        'point5': 'Escenario 5',
-        'point6': 'Escenario 6',
-        'point7': 'Escenario 7',
-        'point8': 'Escenario 8',
-        'point9': 'Escenario 9',
-        'point10': 'Escenario 10',
-        'point11': 'Escenario 11'
+        'point1': 'Entrada',
+        'point2': 'Estacionamiento',
+        'point3': 'Estacionamiento',
+        'point4': 'Entrada',
+        'point5': 'Entrada',
+        'point6': 'Recepción',
+        'point7': 'Recepción',
+        'point8': 'Sala de reuniones',
+        'point9': 'Sala de espera',
+        'point10': 'Sala',
+        'point11': 'Cubículos',
+        'point12': 'Cubículos',
+        'point13': 'Cubículos',
+        'point14': 'Violentómetro',
+        'point15': 'Violentómetro',
+        'point16': 'Área de juegos',
+        'point17': 'Pasillo',
+        'point18': 'Pasillo',
+        'point19': 'Pasillo',
+        'point20': 'Sala oral',
+        'point21': 'Pasillo',
+        'point22': 'Sala de descanso'
     };
 
     const texto = document.querySelector('#scene-value');
