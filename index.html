@@ -14,37 +14,31 @@
         <a-assets>
             <!--Recorrido hacia la entrada-->
             <img id="point1" src="images/GS__01_DxO.webp" alt="Imagen 1">
-            <img id="point2" src="images/GS__02_DxO.webp" alt="Imagen 2">
 
-            <!--<img id="point3" src="images/GS__0211_DxO.webp" alt="Imagen 3"-->
-            <img id="point3" src="images/GS__03_DxO.webp" alt="Imagen 3">
-            <img id="point4" src="images/GS__04_DxO.webp" alt="Imagen 4">
-            <img id="point5" src="images/GS__05_DxO.webp" alt="Imagen 5">
+            <img id="point2" src="images/GS__03_DxO.webp" alt="Imagen 2">
+            <img id="point3" src="images/GS__05_DxO.webp" alt="Imagen 3">
            
             <!--Recepción-->
-            <img id="point6" src="images/GS__06_DxO.webp" alt="Imagen 6">
-            <img id="point7" src="images/GS__07_DxO.webp" alt="Imagen 7">
-            <img id="point8" src="images/GS__08_DxO.webp" alt="Imagen 8">
-            <img id="point9" src="images/GS__09_DxO.webp" alt="Imagen 9">
-            <img id="point10" src="images/GS__10_DxO.webp" alt="Imagen 10">
+            <img id="point4" src="images/GS__07_DxO.webp" alt="Imagen 4">
+            <img id="point5" src="images/GS__08_DxO.webp" alt="Imagen 5">
+            <img id="point6" src="images/GS__09_DxO.webp" alt="Imagen 6">
+            <img id="point7" src="images/GS__10_DxO.webp" alt="Imagen 7">
 
             <!--Cubiculos-->
-            <img id="point11" src="images/GS__11_DxO.webp" alt="Imagen 11">
-            <img id="point12" src="images/GS__12_DxO.webp" alt="Imagen 12">
-            <img id="point13" src="images/GS__13_DxO.webp" alt="Imagen 13">
+            <img id="point8" src="images/GS__11_DxO.webp" alt="Imagen 8">
             
             <!-- Violentometro y juguetes -->
-            <img id="point14" src="images/GS__14_DxO.webp" alt="Imagen 14">
-            <img id="point15" src="images/GS__15_DxO.webp" alt="Imagen 15">
-            <img id="point16" src="images/GS__16_DxO.webp" alt="Imagen 16">
+            <img id="point9" src="images/GS__14_DxO.webp" alt="Imagen 9">
+            <img id="point10" src="images/GS__15_DxO.webp" alt="Imagen 10">
+            <img id="point11" src="images/GS__16_DxO.webp" alt="Imagen 11">
 
             <!--Omar-->
-            <img id="point17" src="images/GS__17_DxO.webp" alt="Imagen 17">
-            <img id="point18" src="images/GS__18_DxO.webp" alt="Imagen 18">
-            <img id="point19" src="images/GS__19_DxO.webp" alt="Imagen 19">
-            <img id="point20" src="images/GS__20_DxO.webp" alt="Imagen 20">
-            <img id="point21" src="images/GS__21_DxO.webp" alt="Imagen 21">
-            <img id="point22" src="images/GS__22_DxO.webp" alt="Imagen 22">
+            <img id="point12" src="images/GS__17_DxO.webp" alt="Imagen 12">
+            <img id="point13" src="images/GS__18_DxO.webp" alt="Imagen 13">
+            <img id="point14" src="images/GS__19_DxO.webp" alt="Imagen 14">
+            <img id="point15" src="images/GS__20_DxO.webp" alt="Imagen 15">
+            <img id="point16" src="images/GS__21_DxO.webp" alt="Imagen 16">
+            <img id="point17" src="images/GS__22_DxO.webp" alt="Imagen 17">
 
             <!--Recursos-->
             <img id="close1" src="images/close1.png" alt="close1">
@@ -61,114 +55,89 @@
             </a-entity>
 
             <a-entity id="group-point2" scale="0 0 0">
-                <a-video class="atras" spot="linkto:#point1;spotgroup:group-point1" rotation="90 60 140" position="0.5 0.5 4" src="#atras" material="opacity:0.7" geometry="width: 2.5; height: 1.5" look-at="#cam"></a-video>
-                <a-video class="adelante" spot="linkto:#point3;spotgroup:group-point3" position="-1 0.3 -4" rotation="90 60 -45" src="#adelante" material="opacity: 0.8" geometry="width:2; height: 1.3" look-at="#cam"></a-video>
+                <a-image class="atras" spot="linkto:#point1;spotgroup:group-point1" position="0.5 0.5 4" rotation="90 60 140" src="#atras" material="opacity=0.8" geometry="width:2; height: 1.3" look-at="#cam"></a-image>
+                <a-image class="adelante" spot="linkto:#point3;spotgroup:group-point3" position="-3.5 0.5 -2" rotation="90 60 -105" src="#adelante" material="opacity:0.8" geometry="width:2; height:1.3" look-at="#cam"></a-image>
             </a-entity>
 
             <a-entity id="group-point3" scale="0 0 0">
-                <a-image class="atras" spot="linkto:#point2;spotgroup:group-point2" position="0.5 0.5 4" rotation="90 60 140" src="#atras" material="opacity=0.8" geometry="width:2; height: 1.3" look-at="#cam"></a-image>
-                <a-image class="adelante" spot="linkto:#point4;spotgroup:group-point4" position="-3.5 0.5 -2" rotation="90 60 -105" src="#adelante" material="opacity:0.8" geometry="width:2; height:1.3" look-at="#cam"></a-image>
-            </a-entity>
-            
-            <a-entity id="group-point4" scale="0 0 0">
-                <a-image class="atras" spot="linkto:#point3;spotgroup:group-point3" position="4.5 -0.3 -1.2" rotation="90 80 75" src="#atras" material="opacity=0.8" geometry="width:2; height:1.3" look-at="#cam"></a-image>
-                <a-image class="adelante __web-inspector-hide-shortcut__" spot="linkto:#point5;spotgroup:group-point5" position="0 -0.7 -4" rotation="90 60 -35" src="#adelante" material="opacity:0.8" geometry="width:2; height:1.3" look-at="#cam"></a-image>
-            </a-entity>
-
-            <a-entity id="group-point5" scale="0 0 0">
-                <a-image class="atras" spot="linkto:#point4;spotgroup:group-point4" position="0.5 -0.9 3" rotation="90 60 142" src="#atras" material="opacity:0.8" geometry="width:1.8; height: 1.3" look-at="#cam"></a-image>
-                <a-image class="adelante" spot="linkto:#point6;spotgroup:group-point6" position="-0.8 -0.7 -3.5" rotation="90 60 -40" src="#adelante" material="opacity:0.8" geometry="width:2 ; height:1.3" look-at="#cam"></a-image>   
+                <a-image class="atras" spot="linkto:#point2;spotgroup:group-point2" position="0.5 -0.9 3" rotation="90 60 142" src="#atras" material="opacity:0.8" geometry="width:1.8; height: 1.3" look-at="#cam"></a-image>
+                <a-image class="adelante" spot="linkto:#point4;spotgroup:group-point4" position="-0.8 -0.7 -3.5" rotation="90 60 -40" src="#adelante" material="opacity:0.8" geometry="width:2 ; height:1.3" look-at="#cam"></a-image>   
             </a-entity>
 
             <!--Recepcion-->
+            <a-entity id="group-point4" scale="0 0 0">
+                <a-image class="atras" spot="linkto:#point3;spotgroup:group-point3" position="-6 -5 6" rotation="-80 80 170" src="#atras" material="opacity=0.8" geometry="width:3.5; height:3.5" look-at="#cam"></a-image>
+                <a-image class="adelante" spot="linkto:#point5;spotgroup:group-point5" position="-12 -4.5 -8" rotation="-80 50 100" src="#adelante" material="opacity=0.8" geometry="width:4.5; height:4" look-at="#cam"></a-image> 
+                <a-image class="adelante" spot="linkto:#point6;spotgroup:group-point6" position="9 -4 1.5" rotation="80 50 55" src="#adelante" material="opacity=0.8" geometry="width:3; height:3" look-at="#cam"></a-image>  
+            </a-entity>
+
+            <a-entity id="group-point5" scale="0 0 0">
+                <a-image class="atras" spot="linkto:#point4;spotgroup:group-point4" position="-1 -1 6" rotation="90 80 180" src="#atras" material="opacity=0.8" geometry="width:3; height:2.5" look-at="#cam"></a-image>
+            </a-entity>
+
             <a-entity id="group-point6" scale="0 0 0">
-                <a-image class="atras" spot="linkto:#point5;spotgroup:group-point5" position="1 -2 6" rotation="90 70 150" src="#atras" material="opacity=0.8" geometry="width:2.5; height:2.5" look-at="#cam"></a-image>
-                <a-image class="adelante" spot="linkto:#point7;spotgroup:group-point7" position="4 -6.5 -9" rotation="85 50 5" src="#adelante" material="opacity=0.8" geometry="width:4.5; height:4.5" look-at="#cam"></a-image>   
+                <a-image class="atras" spot="linkto:#point4;spotgroup:group-point4" position="-4 -5 6" rotation="90 80 170" src="#atras" material="opacity=0.8" geometry="width:2.5; height:2.5" look-at="#cam"></a-image>
+                <a-image class="adelante" spot="linkto:#point7;spotgroup:group-point7" position="-3 -1 -3" rotation="90 50 -80" src="#adelante" material="opacity=0.8" geometry="width:1.5; height:1.5" look-at="#cam"></a-image> 
             </a-entity>
 
             <a-entity id="group-point7" scale="0 0 0">
-                <a-image class="atras" spot="linkto:#point6;spotgroup:group-point6" position="-6 -5 6" rotation="-80 80 170" src="#atras" material="opacity=0.8" geometry="width:3.5; height:3.5" look-at="#cam"></a-image>
-                <a-image class="adelante" spot="linkto:#point8;spotgroup:group-point8" position="-12 -4.5 -8" rotation="-80 50 100" src="#adelante" material="opacity=0.8" geometry="width:4.5; height:4" look-at="#cam"></a-image> 
-                <a-image class="adelante" spot="linkto:#point9;spotgroup:group-point9" position="9 -4 1.5" rotation="80 50 55" src="#adelante" material="opacity=0.8" geometry="width:3; height:3" look-at="#cam"></a-image>  
-            </a-entity>
-
-            <a-entity id="group-point8" scale="0 0 0">
-                <a-image class="atras" spot="linkto:#point7;spotgroup:group-point7" position="-1 -1 6" rotation="90 80 180" src="#atras" material="opacity=0.8" geometry="width:3; height:2.5" look-at="#cam"></a-image>
-            </a-entity>
-
-            <a-entity id="group-point9" scale="0 0 0">
-                <a-image class="atras" spot="linkto:#point7;spotgroup:group-point7" position="-4 -5 6" rotation="90 80 170" src="#atras" material="opacity=0.8" geometry="width:2.5; height:2.5" look-at="#cam"></a-image>
-                <a-image class="adelante" spot="linkto:#point10;spotgroup:group-point10" position="-3 -1 -3" rotation="90 50 -80" src="#adelante" material="opacity=0.8" geometry="width:1.5; height:1.5" look-at="#cam"></a-image> 
-            </a-entity>
-
-            <a-entity id="group-point10" scale="0 0 0">
-                <a-image class="atras" spot="linkto:#point9;spotgroup:group-point9" position="3 -3 -4" rotation="80 170 100" src="#atras" material="opacity=0.8" geometry="width:2.5; height:2.5" look-at="#cam"></a-image>
-                <a-image class="adelante" spot="linkto:#point11;spotgroup:group-point11" position="-5 -0.8 6" rotation="80 50 200" src="#adelante" material="opacity=0.8" geometry="width:3; height:1.5" look-at="#cam"></a-image>
-                <a-image class="adelante" spot="linkto:#point14;spotgroup:group-point14" position="-3.2 -0.8 7.7" rotation="90 50 130" src="#adelante" material="opacity=0.8" geometry="width:2; height:2" look-at="#cam"></a-image> 
+                <a-image class="atras" spot="linkto:#point6;spotgroup:group-point6" position="3 -3 -4" rotation="80 170 100" src="#atras" material="opacity=0.8" geometry="width:2.5; height:2.5" look-at="#cam"></a-image>
+                <a-image class="adelante" spot="linkto:#point8;spotgroup:group-point8" position="-5 -0.8 6" rotation="80 50 200" src="#adelante" material="opacity=0.8" geometry="width:3; height:1.5" look-at="#cam"></a-image>
+                <a-image class="adelante" spot="linkto:#point9;spotgroup:group-point9" position="-3.2 -0.8 7.7" rotation="90 50 130" src="#adelante" material="opacity=0.8" geometry="width:2; height:2" look-at="#cam"></a-image> 
             </a-entity>
 
             <!--Cubiculos-->
-            <a-entity id="group-point11" scale="0 0 0">
-                <a-image class="atras" spot="linkto:#point10;spotgroup:group-point10" position="-10.5 -0.8 -14" rotation="0 70 180" src="#atras" material="opacity=0.8" geometry="width:3; height:1.5" look-at="#cam"></a-image>
-                <a-image class="adelante" spot="linkto:#point12;spotgroup:group-point12" position="4.5 -0.8 -4.5" rotation="50 -40 90" src="#adelante" material="opacity=0.8" geometry="width:2.3; height:1.5" look-at="#cam"></a-image>
+            <a-entity id="group-point8" scale="0 0 0">
+                <a-image class="atras" spot="linkto:#point7;spotgroup:group-point7" position="-10.5 -0.8 -14" rotation="0 70 180" src="#atras" material="opacity=0.8" geometry="width:3; height:1.5" look-at="#cam"></a-image>
             </a-entity>
-            
-            <a-entity id="group-point12" scale="0 0 0">
-                <a-image class="atras" spot="linkto:#point11;spotgroup:group-point11" position="-14 -3 2" rotation="70 -85 90" src="#atras" material="opacity=0.8" geometry="width:2.5; height:3" look-at="#cam"></a-image>
-                <a-image class="adelante" spot="linkto:#point13;spotgroup:group-point13" position="6 -0.8 -2" rotation="80 105 90" src="#adelante" material="opacity=0.8" geometry="width:2; height:1.5" look-at="#cam"></a-image>
-            </a-entity>
-            
-            <a-entity id="group-point13" scale="0 0 0">
-                <a-image class="atras" spot="linkto:#point12;spotgroup:group-point12" position="-13 -3 -1" rotation="70 -70 100" src="#atras" material="opacity=0.8" geometry="width:2.5; height:2.8" look-at="#cam"></a-image>
-            </a-entity>
-
+           
             <!--Violentometro y juguetes-->
-            <a-entity id="group-point14" scale="0 0 0">
-                <a-image class="adelante" spot="linkto:#point15;spotgroup:group-point15" position="-1 -1.8 -5" rotation="90 -170 90" src="#adelante" material="opacity=0.8" geometry="width:2.6; height:1.7" look-at="#cam"></a-image>
-                <a-image class="adelante" spot="linkto:#point16;spotgroup:group-point16" position="5 -1.8 2" rotation="90 60 90" src="#adelante" material="opacity=0.8" geometry="width:3; height:1.5" look-at="#cam"></a-image>
-                <a-image class="adelante" spot="linkto:#point17;spotgroup:group-point17" position="8 -0.8 -3" rotation="70 120 90" src="#adelante" material="opacity=0.8" geometry="width:2; height:2" look-at="#cam"></a-image> 
-                <a-image class="atras" spot="linkto:#point10;spotgroup:group-point10" position="-10 -3 1" rotation="80 -75 100" src="#atras" material="opacity=0.8" geometry="width:2.5; height:2.5" look-at="#cam"></a-image>
+            <a-entity id="group-point9" scale="0 0 0">
+                <a-image class="adelante" spot="linkto:#point10;spotgroup:group-point10" position="-1 -1.8 -5" rotation="90 -170 90" src="#adelante" material="opacity=0.8" geometry="width:2.6; height:1.7" look-at="#cam"></a-image>
+                <a-image class="adelante" spot="linkto:#point11;spotgroup:group-point11" position="5 -1.8 2" rotation="90 60 90" src="#adelante" material="opacity=0.8" geometry="width:3; height:1.5" look-at="#cam"></a-image>
+                <a-image class="adelante" spot="linkto:#point12;spotgroup:group-point12" position="8 -0.8 -3" rotation="70 120 90" src="#adelante" material="opacity=0.8" geometry="width:2; height:2" look-at="#cam"></a-image> 
+                <a-image class="atras" spot="linkto:#point7;spotgroup:group-point7" position="-10 -3 1" rotation="80 -75 100" src="#atras" material="opacity=0.8" geometry="width:2.5; height:2.5" look-at="#cam"></a-image>
             </a-entity>
 
-            <a-entity id="group-point15" scale="0 0 0">
-                <a-image class="atras" spot="linkto:#point14;spotgroup:group-point14" position="3 -1 9" rotation="80 22 90" src="#atras" material="opacity=0.8" geometry="width:2; height:2" look-at="#cam"></a-image>
+            <a-entity id="group-point10" scale="0 0 0">
+                <a-image class="atras" spot="linkto:#point9;spotgroup:group-point9" position="3 -1 9" rotation="80 22 90" src="#atras" material="opacity=0.8" geometry="width:2; height:2" look-at="#cam"></a-image>
             </a-entity>
 
-            <a-entity id="group-point16" scale="0 0 0">
-                <a-image class="atras" spot="linkto:#point14;spotgroup:group-point14" position="9 -2 6" rotation="90 10 90" src="#atras" material="opacity=0.8" geometry="width:2.5; height:2.5" look-at="#cam"></a-image>
+            <a-entity id="group-point11" scale="0 0 0">
+                <a-image class="atras" spot="linkto:#point9;spotgroup:group-point9" position="9 -2 6" rotation="90 10 90" src="#atras" material="opacity=0.8" geometry="width:2.5; height:2.5" look-at="#cam"></a-image>
             </a-entity>
 
             <!--Pasillos-->
-            <a-entity id="group-point17" scale="0 0 0">
-                <a-video class="adelante" spot="linkto:#point18;spotgroup:group-point18" position="2.2 0 9" rotation="70 20 95" material="opacity=0.8" src="#adelante" geometry="width: 2; height: 1.8" look-at="#cam"></a-video>
-                <a-video class="adelante" spot="linkto:#point19;spotgroup:group-point19" position="0 2 18" rotation="0 0 180" material="opacity=0.8" src="#adelante" geometry="width: 2; height: 1.9" look-at="#cam"></a-video>
-                <a-image class="atras" spot="linkto:#point14;spotgroup:group-point14" position="-4 -2 -6" rotation="90 -150 90" src="#atras" material="opacity=0.8" geometry="width:2.5; height:2" look-at="#cam"></a-image>
+            <a-entity id="group-point12" scale="0 0 0">
+                <a-video class="adelante" spot="linkto:#point13;spotgroup:group-point13" position="2.2 0 9" rotation="70 20 95" material="opacity=0.8" src="#adelante" geometry="width: 2; height: 1.8" look-at="#cam"></a-video>
+                <a-video class="adelante" spot="linkto:#point14;spotgroup:group-point14" position="0 2 18" rotation="0 0 180" material="opacity=0.8" src="#adelante" geometry="width: 2; height: 1.9" look-at="#cam"></a-video>
+                <a-image class="atras" spot="linkto:#point9;spotgroup:group-point9" position="-4 -2 -6" rotation="90 -150 90" src="#atras" material="opacity=0.8" geometry="width:2.5; height:2" look-at="#cam"></a-image>
             </a-entity>
 
-            <a-entity id="group-point18" scale="0 0 0">
-                <a-video class="adelante" spot="linkto:#point21;spotgroup:group-point21" position="7 2 7" rotation="0 70 180 " material="opacity=0.8" src="#adelante" geometry="width: 2; height: 1.3" look-at="#cam"></a-video>
-                <a-video class="atras" spot="linkto:#point17;spotgroup:group-point17" position="-10 0 -7" rotation="-80 60 90" src="#atras" material="opacity=0.7" geometry="width: 2.7; height: 1.9" look-at="#cam"></a-video>
-                <a-video class="atras" spot="linkto:#point19;spotgroup:group-point19" position="-9 1.2 -4" rotation="0 200 0" src="#atras" material="opacity: 0.7" geometry="width:2; height: 1" look-at="#cam"></a-video>
+            <a-entity id="group-point13" scale="0 0 0">
+                <a-video class="adelante" spot="linkto:#point16;spotgroup:group-point16" position="7 2 7" rotation="0 70 180 " material="opacity=0.8" src="#adelante" geometry="width: 2; height: 1.3" look-at="#cam"></a-video>
+                <a-video class="atras" spot="linkto:#point12;spotgroup:group-point12" position="-10 0 -7" rotation="-80 60 90" src="#atras" material="opacity=0.7" geometry="width: 2.7; height: 1.9" look-at="#cam"></a-video>
+                <a-video class="atras" spot="linkto:#point14;spotgroup:group-point14" position="-9 1.2 -4" rotation="0 200 0" src="#atras" material="opacity: 0.7" geometry="width:2; height: 1" look-at="#cam"></a-video>
             </a-entity>
           
             <!--Sala oral-->
-            <a-entity id="group-point19" scale="0 0 0">
-                <a-video class="adelante" spot="linkto:#point20;spotgroup:group-point20" position="0 0.4 -2.4" rotation="60 183 90" material="opacity=0.8" src="#adelante" geometry="width: 1; height: 1" look-at="#cam"></a-video>
-                <a-video class="atras" spot="linkto:#point18;spotgroup:group-point18" position="17 3.5 -.7" rotation="0 120 178" src="#atras" material="opacity=0.7" geometry="width: 2.7; height: 1.4" look-at="#cam"></a-video>
-                <a-video class="atras" spot="linkto:#point17;spotgroup:group-point17" position="17 3.5 -4" rotation="0 120 -5" src="#atras" material="opacity=0.7" geometry="width: 2.7; height: 1.4" look-at="#cam"></a-video>
+            <a-entity id="group-point14" scale="0 0 0">
+                <a-video class="adelante" spot="linkto:#point15;spotgroup:group-point15" position="0 0.4 -2.4" rotation="60 183 90" material="opacity=0.8" src="#adelante" geometry="width: 1; height: 1" look-at="#cam"></a-video>
+                <a-video class="atras" spot="linkto:#point13;spotgroup:group-point13" position="17 3.5 -.7" rotation="0 120 178" src="#atras" material="opacity=0.7" geometry="width: 2.7; height: 1.4" look-at="#cam"></a-video>
+                <a-video class="atras" spot="linkto:#point12;spotgroup:group-point12" position="17 3.5 -4" rotation="0 120 -5" src="#atras" material="opacity=0.7" geometry="width: 2.7; height: 1.4" look-at="#cam"></a-video>
             </a-entity>
-            <a-entity id="group-point20" scale="0 0 0">    
-                <a-video class="atras" spot="linkto:#point19;spotgroup:group-point19" position="-5 0.7 11" rotation="60 -20 90" src="#atras" material="opacity=0.7" geometry="width: 2.7; height: 1.4" look-at="#cam"></a-video>      
+            <a-entity id="group-point15" scale="0 0 0">    
+                <a-video class="atras" spot="linkto:#point14;spotgroup:group-point14" position="-5 0.7 11" rotation="60 -20 90" src="#atras" material="opacity=0.7" geometry="width: 2.7; height: 1.4" look-at="#cam"></a-video>      
             </a-entity>
 
          <!--Sala config-->
-         <a-entity id="group-point21" scale="0 0 0">
-            <a-video class="adelante" spot="linkto:#point22;spotgroup:group-point22" position="-.8 0.4 -2.4" rotation="60 194 90" material="opacity=0.8" src="#adelante" geometry="width: 1; height: 1" look-at="#cam"></a-video>
-            <a-video class="atras" spot="linkto:#point18;spotgroup:group-point18" position="18 2.7 -5" rotation="0 70 0" src="#atras" material="opacity=0.7" geometry="width: 2.7; height: 1.4" look-at="#cam"></a-video>      
+         <a-entity id="group-point16" scale="0 0 0">
+            <a-video class="adelante" spot="linkto:#point17;spotgroup:group-point17" position="-.8 0.4 -2.4" rotation="60 194 90" material="opacity=0.8" src="#adelante" geometry="width: 1; height: 1" look-at="#cam"></a-video>
+            <a-video class="atras" spot="linkto:#point13;spotgroup:group-point13" position="18 2.7 -5" rotation="0 70 0" src="#atras" material="opacity=0.7" geometry="width: 2.7; height: 1.4" look-at="#cam"></a-video>      
         </a-entity>
 
-        <a-entity id="group-point22" scale="0 0 0">
-            <a-video class="atras" spot="linkto:#point21;spotgroup:group-point21" position="-6 0.7 -5.5" rotation="70 225 90" src="#atras" material="opacity=0.7" geometry="width: 2; height: 1.4" look-at="#cam"></a-video>      
+        <a-entity id="group-point17" scale="0 0 0">
+            <a-video class="atras" spot="linkto:#point16;spotgroup:group-point16" position="-6 0.7 -5.5" rotation="70 225 90" src="#atras" material="opacity=0.7" geometry="width: 2; height: 1.4" look-at="#cam"></a-video>      
         </a-entity>
 
         </a-entity>
@@ -209,26 +178,7 @@
             
         </a-image> -->
 
-        <a-entity id="opciones" visible="false">
-            <a-entity id="spotMenu" spot="linkto:#point1;spotgroup:group-point1" position="-2 1.1 -1.5" menu-toggle>
-                <a-plane class="interactivo" color="#ffffff" opacity="0.8" width="0.8" height="0.15"></a-plane>
-                <a-text value="Escenario 1" color="black" align="center" width="2"></a-text>
-            </a-entity>
-           <a-entity spot="linkto:#point2;spotgroup:group-point2" position="-2 0.95 -1.5" menu-toggle>
-                <a-plane class="interactivo" color="#ffffff" class="interactivo" opacity="0.8" width="0.8" height="0.15" menu-toggle></a-plane>
-                <a-text value="Escenario 2" color="black" align="center" width="2"></a-text>
-            </a-entity>
-            <a-entity spot="linkto:#point3;spotgroup:#group-point3" position="-2 0.80 -1.5" menu-toggle>
-                <a-plane class="interactivo" color="#ffffff" opacity="0.8" width="0.8" height="0.15"></a-plane>
-                <a-text value="Escenario 3" color="black" align="center" width="2"></a-text>
-            </a-entity>
-            <a-entity spot="linkto:#point4;spotgroup:#group-point4" position="-2 0.65 -1.5" menu-toggle>
-                <a-plane class="interactivo" color="#ffffff" opacity="0.8" width="0.8" height="0.15"></a-plane>
-                <a-text value="Escenario 4" color="black" align="center" width="2"></a-text>
-            </a-entity>
-        </a-entity> 
-
-        <a-entity position="-0.40 0.30 -1.5">
+        <a-entity position="-0.80 0.30 -1.5">
             <a-plane color="#222" opacity="0.6" width="0.46" height="0.12"></a-plane>
             <a-text id="scene-value" value="Entrada" color="white" align="center" width="1.2" text="negate: false;" font="https://raw.githubusercontent.com/mel091/lato-font/refs/heads/main/Lato-Regular-msdf.json"></a-text>"></a-text>
         </a-entity>
