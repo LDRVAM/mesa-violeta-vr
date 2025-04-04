@@ -1,10 +1,13 @@
 function init() {
     console.log("Init function running");
     const close = document.querySelector('.close');
+    if (close) {  // Verifica si existe antes de agregar el evento
     close.addEventListener('click', () => {
-        console.log("click")
+        console.log("click");
         history.back();
     });
+}
+
 
     // Register 'spot' component
     AFRAME.registerComponent('spot', {

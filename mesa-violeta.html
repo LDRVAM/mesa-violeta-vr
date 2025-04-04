@@ -53,6 +53,12 @@
             <video id="video" autoplay loop muted src="images/try.webm"></video>
             <img id="imgP" src="images/imgPrueba.jpg" alt="imgPrueba">
 
+            <img id="imgPsicologica" src="images/violencia-psico.png" alt="imgPsicologica">
+            <img id="imgFisica" src="images/violencia-fisica.png" alt="imgFisica">
+            <img id="imgPatrimonial" src="images/violencia-patrimonial.png" alt="imgPatrimonial">
+            <img id="imgEconomica" src="images/violencia-economica.png" alt="imgEconomica">
+            <img id="imgSexual" src="images/violencia-sexual.png" alt="imgSexual">
+
         </a-assets>
 
         <a-entity id="spots" hotspots scale="1 1 1">
@@ -147,42 +153,42 @@
                 
                 <a-video id="open8" position="5 -0.5 -4" rotation="85 180 0.000" src="#video" material="opacity:0.8" visible="true" visibilidad="openImageId: open8; imageId: psicologica; closeId: close9" geometry="width: 2.5; height: 2.5"></a-video>
                 <a-entity id="psicologica" position="6 1 -8" rotation="0.000 -30 0.000" visible="false">
-                    <a-plane position="0 1 0" rotation="0 0 0" geometry="width: 7.5; height: 6.5" material="color: #FFF200; opacity: 0.7"></a-plane>
-                    <a-circle position="3.12 3.6 0.03" id="close9" radius="0.35" material="src: #close1; opacity:1" geometry=""></a-circle>
-                    <a-text position="0 2.7 0.01" value="Violencia psicológica" align="center" color="black" width="9.5" text="wrapCount: 30; baseline: top; negate: false;" font="https://raw.githubusercontent.com/mel091/lato-font/refs/heads/main/Lato-Regular-msdf.json"></a-text>
-                    <a-text position="0 1.6 0.01" value="Es cualquier acto u omisión que dañe la estabilidad psicológica, que puede consistir en: negligencia, abandono, descuido reiterado, celotipia, insultos, humillaciones, devaluación, marginación, indiferencia, infidelidad, comparaciones destructivas, rechazo, restricción a la autodeterminación y amenazas, las cuales conllevan a la víctima a la depresión, al aislamiento, a la devaluación de su autoestima e incluso al suicidio." align="center" color="black" width="7.2" text="wrapCount: 42; baseline: top; shader: msdf; negate: false;" font="https://raw.githubusercontent.com/mel091/lato-font/refs/heads/main/Lato-Regular-msdf.json"></a-text>
+                    <a-plane position="0 1 0" rotation="0 0 0" geometry="width: 7.5; height: 8.3" material="color: #FFF200; opacity: 0.7"></a-plane>
+                    <a-image src="#imgPsicologica" position="0 2.8 0.03" geometry="width: 7; height: 4" material=""></a-image>
+                    <a-circle position="3.12 4.3 0.05" id="close9" radius="0.35" material="src: #close1; opacity:1" geometry=""></a-circle>
+                    <a-text position="0 0.3 0.01" value="Es cualquier acto u omisión que dañe la estabilidad psicológica, que puede consistir en: negligencia, abandono, descuido reiterado, celotipia, insultos, humillaciones, devaluación, marginación, indiferencia, infidelidad, comparaciones destructivas, rechazo, restricción a la autodeterminación y amenazas, las cuales conllevan a la víctima a la depresión, al aislamiento, a la devaluación de su autoestima e incluso al suicidio." align="center" color="black" width="7.2" text="wrapCount: 42; baseline: top; shader: msdf; negate: false;" font="https://raw.githubusercontent.com/mel091/lato-font/refs/heads/main/Lato-Regular-msdf.json"></a-text>
                 </a-entity>
 
                 <a-video id="open9" position="6 -1 -1" rotation="90 140 0.000" src="#video" material="opacity:0.8" visible="true" visibilidad="openImageId: open9; imageId: fisica; closeId: close10" geometry="width: 2.5; height: 2.5"></a-video>
                 <a-entity id="fisica" position="9.5 1 -2" rotation="0.000 -70 0.000" visible="false">
-                    <a-plane position="0 1 0" rotation="0 0 0" geometry="width: 7.3; height: 4.7" material="color: #FFA500; opacity: 0.7"></a-plane>
-                    <a-circle position="3.12 2.8 0.03" id="close10" radius="0.35" material="src: #close1; opacity:1" geometry=""></a-circle>
-                    <a-text position="0 2 0.01" value="Violencia física" align="center" color="black" width="9.5" text="wrapCount: 30; baseline: top; negate: false;" font="https://raw.githubusercontent.com/mel091/lato-font/refs/heads/main/Lato-Regular-msdf.json"></a-text>
-                    <a-text position="0 1 0.01" value="Es cualquier acto que inflige daño no accidental, usando la fuerza física o algún tipo de arma u objeto que pueda provocar o no lesiones ya sean internas, externas, o ambas" align="center" color="black" width="7.2" text="wrapCount: 42; baseline: top; shader: msdf; negate: false;" font="https://raw.githubusercontent.com/mel091/lato-font/refs/heads/main/Lato-Regular-msdf.json"></a-text>
+                    <a-plane position="0 1 0" rotation="0 0 0" geometry="width: 7.3; height: 6.8" material="color: #FFA500; opacity: 0.7"></a-plane>
+                    <a-circle position="3 3.8 0.05" id="close10" radius="0.35" material="src: #close1; opacity:1" geometry=""></a-circle>
+                    <a-image src="#imgFisica" position="0 2.3 0.03" geometry="width: 6.8; height: 3.7" material=""></a-image>
+                    <a-text position="0 -0.1 0.01" value="Es cualquier acto que inflige daño no accidental, usando la fuerza física o algún tipo de arma u objeto que pueda provocar o no lesiones ya sean internas, externas, o ambas" align="center" color="black" width="7.2" text="wrapCount: 42; baseline: top; shader: msdf; negate: false;" font="https://raw.githubusercontent.com/mel091/lato-font/refs/heads/main/Lato-Regular-msdf.json"></a-text>
                 </a-entity>
 
                 <a-video id="open10" position="7 -1 3" rotation="85 70 0.000" src="#video" material="opacity:0.8" visible="true" visibilidad="openImageId: open10; imageId: patrimonial; closeId: close11" geometry="width: 2.5; height: 2.5"></a-video>
                 <a-entity id="patrimonial" position="10 1 5" rotation="0.000 -115 0.000" visible="false">
-                    <a-plane position="0 1 0" rotation="0 0 0" geometry="width: 7.5; height: 6.1" material="color: #FF7F00; opacity: 0.7"></a-plane>
-                    <a-circle position="3.12 3.3 0.03" id="close11" radius="0.35" material="src: #close1; opacity:1" geometry=""></a-circle>
-                    <a-text position="0 2.4 0.01" value="Violencia patrimonial" align="center" color="black" width="9.5" text="wrapCount: 30; baseline: top; negate: false;" font="https://raw.githubusercontent.com/mel091/lato-font/refs/heads/main/Lato-Regular-msdf.json"></a-text>
-                    <a-text position="0 1.3 0.01" value="Es cualquier acto u omisión que afecta la supervivencia de la víctima. Se manifiesta en: la transformación, sustracción, destrucción, retención o distracción de objetos, documentos personales, bienes y valores, derechos patrimoniales o recursos económicos destinados a satisfacer sus necesidades y puede abarcar los daños a los bienes comunes o propios de la víctima." align="center" color="black" width="7.2" text="wrapCount: 42; baseline: top; shader: msdf; negate: false;" font="https://raw.githubusercontent.com/mel091/lato-font/refs/heads/main/Lato-Regular-msdf.json"></a-text>
+                    <a-plane position="0 1 0" rotation="0 0 0" geometry="width: 7.5; height: 8.3" material="color: #FF7F00; opacity: 0.7"></a-plane>
+                    <a-circle position="3.12 4.3 0.05" id="close11" radius="0.35" material="src: #close1; opacity:1" geometry=""></a-circle>
+                    <a-image src="#imgPatrimonial" position="0 2.8 0.03" geometry="width: 7; height: 4" material=""></a-image>
+                    <a-text position="0 0.3 0.01" value="Es cualquier acto u omisión que afecta la supervivencia de la víctima. Se manifiesta en: la transformación, sustracción, destrucción, retención o distracción de objetos, documentos personales, bienes y valores, derechos patrimoniales o recursos económicos destinados a satisfacer sus necesidades y puede abarcar los daños a los bienes comunes o propios de la víctima." align="center" color="black" width="7.2" text="wrapCount: 42; baseline: top; shader: msdf; negate: false;" font="https://raw.githubusercontent.com/mel091/lato-font/refs/heads/main/Lato-Regular-msdf.json"></a-text>
                 </a-entity>
 
                 <a-video id="open11" position="-4 -1 4" rotation="90 10 0.000" src="#video" material="opacity:0.8" visible="true" visibilidad="openImageId: open11; imageId: economica; closeId: close12" geometry="width: 2.5; height: 2.5"></a-video>
                 <a-entity id="economica" position="-6.5 1 5" rotation="0.000 -240 0.000" visible="false">
-                    <a-plane position="0 1 0" rotation="0 0 0" geometry="width: 7.5; height: 5.5" material="color: #E63946; opacity: 0.7"></a-plane>
-                    <a-circle position="3.12 3 0.03" id="close12" radius="0.35" material="src: #close1; opacity:1" geometry=""></a-circle>
-                    <a-text position="0 2.2 0.01" value="Violencia económica" align="center" color="black" width="9.5" text="wrapCount: 30; baseline: top; negate: false;" font="https://raw.githubusercontent.com/mel091/lato-font/refs/heads/main/Lato-Regular-msdf.json"></a-text>
-                    <a-text position="0 1.1 0.01" value="Es toda acción u omisión del Agresor que afecta la supervivencia económica de la víctima. Se manifiesta a través de limitaciones encaminadas a controlar el ingreso de sus percepciones económicas, así como la percepción de un salario menor por igual trabajo, dentro de un mismo centro laboral" align="center" color="black" width="7.2" text="wrapCount: 42; baseline: top; shader: msdf; negate: false;" font="https://raw.githubusercontent.com/mel091/lato-font/refs/heads/main/Lato-Regular-msdf.json"></a-text>
+                    <a-plane position="0 1 0" rotation="0 0 0" geometry="width: 7.5; height: 6.8" material="color: #E63946; opacity: 0.7"></a-plane>
+                    <a-circle position="3 3.8 0.05" id="close12" radius="0.35" material="src: #close1; opacity:1" geometry=""></a-circle>
+                    <a-image src="#imgEconomica" position="0 2.3 0.03" geometry="width: 6.8; height: 3.7" material=""></a-image>
+                    <a-text position="0 0 0.01" value="Es toda acción u omisión del Agresor que afecta la supervivencia económica de la víctima. Se manifiesta a través de limitaciones encaminadas a controlar el ingreso de sus percepciones económicas, así como la percepción de un salario menor por igual trabajo, dentro de un mismo centro laboral" align="center" color="white" width="7.2" text="wrapCount: 42; baseline: top; shader: msdf; negate: false;" font="https://raw.githubusercontent.com/mel091/lato-font/refs/heads/main/Lato-Regular-msdf.json"></a-text>
                 </a-entity>
 
                 <a-video id="open12" position="-6 -1 -1" rotation="90 -30 0.000" src="#video" material="opacity:0.8" visible="true" visibilidad="openImageId: open12; imageId: sexual; closeId: close13" geometry="width: 2.5; height: 2.5"></a-video>
                 <a-entity id="sexual" position="-9 1 -3" rotation="0.000 90 0.000" visible="false">
-                    <a-plane position="0 1 0" rotation="0 0 0" geometry="width: 7.5; height: 5.5" material="color: #B30000; opacity: 0.7"></a-plane>
-                    <a-circle position="3.12 3.1 0.03" id="close13" radius="0.35" material="src: #close1; opacity:1" geometry=""></a-circle>
-                    <a-text position="0 2.2 0.01" value="Violencia sexual" align="center" color="white" width="9.5" text="wrapCount: 30; baseline: top; negate: false;" font="https://raw.githubusercontent.com/mel091/lato-font/refs/heads/main/Lato-Regular-msdf.json"></a-text>
-                    <a-text position="0 1.1 0.01" value="Es cualquier acto que degrada o daña el cuerpo y/o la sexualidad de la Víctima y que por tanto atenta contra su libertad, dignidad e integridad física. Es una expresión de abuso de poder que implica la supremacía masculina sobre la mujer, al denigrarla y concebirla como objeto." align="center" color="white" width="7.2" text="wrapCount: 42; baseline: top; shader: msdf; negate: false;" font="https://raw.githubusercontent.com/mel091/lato-font/refs/heads/main/Lato-Regular-msdf.json"></a-text>
+                    <a-plane position="0 1 0" rotation="0 0 0" geometry="width: 7.5; height: 6.8" material="color: #B30000; opacity: 0.7"></a-plane>
+                    <a-circle position="3 3.8 0.05" id="close13" radius="0.35" material="src: #close1; opacity:1" geometry=""></a-circle>
+                    <a-image src="#imgSexual" position="0 2.3 0.03" geometry="width: 6.8; height: 3.7" material=""></a-image>
+                    <a-text position="0 -0.1 0.01" value="Es cualquier acto que degrada o daña el cuerpo y/o la sexualidad de la Víctima y que por tanto atenta contra su libertad, dignidad e integridad física. Es una expresión de abuso de poder que implica la supremacía masculina sobre la mujer, al denigrarla y concebirla como objeto." align="center" color="white" width="7.2" text="wrapCount: 42; baseline: top; shader: msdf; negate: false;" font="https://raw.githubusercontent.com/mel091/lato-font/refs/heads/main/Lato-Regular-msdf.json"></a-text>
                 </a-entity>
             </a-entity>
 
@@ -280,25 +286,6 @@
             position="0 0 -1.8"
             material="shader:flat; color:#ff0000;">
         </a-entity>
-
-        <a-image 
-            class="close interactivo" 
-            src="images/casita.png" 
-            position="0.75 0.30 -1.5" 
-            width="0.18" 
-            height="0.18"
-            event-set__click="_event: click; color: #00FF00">
-        </a-image>
-        <!-- <a-image 
-            class="menu interactivo" 
-            id="menu" 
-            src="images/menu.png" 
-            position="-0.80 0.30 -1.5" 
-            width="0.20" 
-            height="0.20"
-            event-set__click="_event: click; color: #FF0000">
-            
-        </a-image> -->
 
         <a-entity position="-0.80 0.30 -1.5">
             <a-plane color="#222" opacity="0.6" width="0.46" height="0.12"></a-plane>
