@@ -25,7 +25,7 @@ function init() {
             el.addEventListener('click', function (e) {
                 const sky = document.querySelector('#sky');
                 sky.setAttribute('src', data.linkto);
-                cambiarTexto(data.linkto.replace('#', ''));
+                
                 
                 const spotComp = document.querySelector('#spots');
                 const currentSpot = this.parentElement.getAttribute('id');
@@ -146,53 +146,6 @@ AFRAME.registerComponent('carousel', {
     }
 });
 
-function cambiarTexto(sceneId) {
-    const scenes = {
-        'point1': 'Entrada',
-        'point2': 'Estacionamiento',
-        'point3': 'Entrada',
-        'point4': 'Recepción',
-        'point5': 'Sala de reuniones',
-        'point6': 'Sala de espera',
-        'point7': 'Sala',
-        'point8': 'Cubículos',
-        'point9': 'Violentómetro',
-        'point10': 'Violentómetro',
-        'point11': 'Área de juegos',
-        'point12': 'Pasillo',
-        'point13': 'Pasillo',
-        'point14': 'Pasillo',
-        'point15': 'Sala oral',
-        'point16': 'Pasillo',
-        'point17': 'Sala de descanso'
-    };
-
-    const texto = document.querySelector('#scene-value');
-    texto.setAttribute('value', scenes[sceneId]);
-}
-
-// function cambiarTextoConAudio(sceneId) {
-//     const scenes = {
-//         'point1': 'Escenario 1',
-//         'point2': 'Escenario 2',
-//         'point3': 'Escenario 3',
-//         'point4': 'Escenario 4',
-//         'point5': 'Escenario 5',
-//         'point6': 'Escenario 6',
-//         'point7': 'Escenario 7',
-//         'point8': 'Escenario 8'
-//     };
-
-//     const texto = document.querySelector('#scene-value');
-//     texto.setAttribute('value', scenes[sceneId]);
-
-//     const audioControl = document.querySelector('#audio-control');
-//     if (sceneId === 'point4') {
-//         audioControl.components.sound.playSound();
-//     } else {
-//         audioControl.components.sound.stopSound();
-//     }
-// }
 
 window.addEventListener('load', function () {
     init();
