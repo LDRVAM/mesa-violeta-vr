@@ -26,5 +26,12 @@
         "name": "Ayuntamiento",
         "bg": "ayuntamiento.png",
         "link": "index.html"
+    },
+    {
+        "lat": 24.13338,
+        "lng": -110.31831,
+        "name": "Policía Municipal",
+        "bg": "escudoMun.png",
+        "link": "index.html"
     }
 ]
