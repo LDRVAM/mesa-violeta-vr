@@ -34,6 +34,19 @@ AFRAME.registerComponent('hotspots', {
         });
     }
 });
+function autoPlayVideos(videoIds) {
+    videoIds.forEach(id => {
+        const videoElement = document.getElementById(id);
+        if (videoElement) {
+            videoElement.addEventListener('loadeddata', () => {
+                videoElement.play();
+            });
+        } else {
+            console.warn(`El elemento con ID "${id}" no se encontró.`);
+        }
+    });
+}
+autoPlayVideos(['video', 'atras', 'adelante']);
 
 AFRAME.registerComponent('visibilidad', {
     schema: {

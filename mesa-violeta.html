@@ -27,6 +27,7 @@
             <img id="point9" src="images/GS__14_DxO.webp" alt="Imagen 9">
             <img id="point10" src="images/GS__15_DxO.webp" alt="Imagen 10">
             <img id="point11" src="images/GS__16_DxO.webp" alt="Imagen 11">
+            <img id="violentometro" src="images/violentometro.png" alt="Imagen 12">
             <!--Recursos-->
             <img id="close1" src="images/close1.png" alt="close1">
             <video id="atras" autoplay loop muted src="images/direction.webm" alt="hotspot"></video>
@@ -53,7 +54,8 @@
                     <a-circle position="4 5.3 0.04" id="close01" radius="0.4" material="src: #close1; opacity:1" geometry="" class="clickable"></a-circle>
                     <a-image src="#imgP" position="0 3.3 0.03" geometry="width: 9.2; height: 5" material=""></a-image>
                     <a-text position="0 0 0.01" value="Información" align="center" color="white" width="9.5" text="wrapCount: 30; baseline: top; negate: false;" font="https://raw.githubusercontent.com/mel091/lato-font/refs/heads/main/Lato-Regular-msdf.json"></a-text>
-                    <a-text position="0 -1 0.01" value="*Dirección: Calle Carabineros/ Luis Donaldo Colosio Murrieta y Calle San Antonio, Col. Ex Base Aérea, C.P. 23050. La Paz, Baja California Sur.
+                    <a-text position="0 -1 0.01" value="Servicios las 24 HRS
+                    *Dirección: Calle Carabineros/ Luis Donaldo Colosio Murrieta y Calle San Antonio, Col. Ex Base Aérea, C.P. 23050. La Paz, Baja California Sur.
                     *Teléfono: -(612) 68 81229 -(612) 68 81236 
                     *Correo: cjm.bcs.coordinacion@pgjebcs.gob.mx" align="center" color="white" width="9.5" text="wrapCount: 50; baseline: top; shader: msdf; negate: false;" font="https://raw.githubusercontent.com/mel091/lato-font/refs/heads/main/Lato-Regular-msdf.json"></a-text>
                 </a-entity>
@@ -226,6 +228,13 @@
                     <a-image src="#imgP" position="0 3.3 0.03" geometry="width: 9.2; height: 5" material=""></a-image>
                     <a-text position="0 0 0.01" value="Bolsa de trabajo" align="center" color="white" width="9.5" text="wrapCount: 30; baseline: top; negate: false;" font="https://raw.githubusercontent.com/mel091/lato-font/refs/heads/main/Lato-Regular-msdf.json"></a-text>
                     <a-text position="0 -1 0.01" value="Para las víctimas de violencia, la independencia económica es clave para romper el vínculo con el agresor. Por ello, los Centros de Justicia ofrecen una bolsa de trabajo con oportunidades acordes a su perfil y capacitación mediante cursos y talleres. Para más información sobre vacantes y formación, se les invita a acudir al Centro de Justicia para las Mujeres." align="center" color="white" width="9.5" text="wrapCount: 50; baseline: top; shader: msdf; negate: false;" font="https://raw.githubusercontent.com/mel091/lato-font/refs/heads/main/Lato-Regular-msdf.json"></a-text>
+                </a-entity>
+                
+                <a-video id="open17" position="-2.7 -3 -8.7" rotation="90 150 0.000" src="#video" material="opacity:0.8" visible="true" visibilidad="openImageId: open17; imageId: violento; closeId: close17" geometry="width: 2.5; height: 2.5" class="clickable"></a-video>
+                <a-entity id="violento" position="-9.4 0.8 -8" rotation="0.000 20 0.000" visible="false">
+                    <a-plane position="0 1 0" rotation="0 0 0" geometry="width: 9; height: 10" material="color: black; opacity: 0.8"></a-plane>
+                    <a-circle position="4 5.3 0.04" id="close17" radius="0.4" material="src: #close1; opacity:1" geometry="" class="clickable"></a-circle>
+                    <a-image src="#violentometro" position="-0.5 1 0.03" geometry="width: 7.5; height: 8.5" material=""></a-image>
                 </a-entity>
             </a-entity>
 
