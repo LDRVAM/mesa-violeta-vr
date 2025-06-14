@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -74,7 +75,27 @@
                     <a-plane position="0 1 0" rotation="0 0 0" geometry="width: 7.5; height: 8.3" material="color: #FFF200; opacity: 0.7"></a-plane>
                     <a-image src="#imgPsicologica" position="0 2.8 0.03" geometry="width: 7; height: 4" material=""></a-image>
                     <a-circle position="3.12 4.3 0.05" id="close" radius="0.35" material="src: #close1; opacity:1" geometry="" class="clickable"></a-circle>
-                    <a-text position="0 0.3 0.01" value="Es cualquier acto u omisión que dañe la estabilidad psicológica, que puede consistir en: negligencia, abandono, descuido reiterado, celotipia, insultos, humillaciones, devaluación, marginación, indiferencia, infidelidad, comparaciones destructivas, rechazo, restricción a la autodeterminación y amenazas, las cuales conllevan a la víctima a la depresión, al aislamiento, a la devaluación de su autoestima e incluso al suicidio." align="center" color="black" width="7.2" text="wrapCount: 42; baseline: top; shader: msdf; negate: false;" font="https://raw.githubusercontent.com/mel091/lato-font/refs/heads/main/Lato-Regular-msdf.json"></a-text>
+                    <a-entity position="0 -0.5 0.01">
+
+                        <a-text value="Es cualquier acto u omisión que dañe la estabilidad psicológica, que puede consistir en: abandono, insultos, humillaciones, rechazo, amenazas, etc., las cuales pueden conllevar a la víctima a la depresión u otras afectaciones. Recuerda respetarte y respetar a las demas personas."
+                                align="center" 
+                                color="black" 
+                                width="7.2" 
+                                position="0 0.7 0"
+                                text="wrapCount: 35; baseline: top; shader: msdf; negate: false;" 
+                                font="https://raw.githubusercontent.com/mel091/lato-font/refs/heads/main/Lato-Regular-msdf.json">
+                        </a-text>
+                        
+                        <a-text value="Recuerda respetarte y respetar a las demas personas."
+                                align="center" 
+                                color="black" 
+                                width="7.2" 
+                                position="0 -1.4 0"
+                                text="wrapCount: 35; baseline: top; shader: msdf; negate: false;" 
+                                font="https://raw.githubusercontent.com/mel091/lato-font/refs/heads/main/Lato-Regular-msdf.json">
+                        </a-text>
+                    
+                    </a-entity>
                 </a-entity>
 
                 <a-video id="open1" position="4 -1 -1.5" rotation="90 120 0.000" src="#video" material="opacity:0.8" visible="true" visibilidad="openImageId: open1; imageId: fisica; closeId: close1" geometry="width: 2.6; height: 2.6" class="clickable"></a-video>
@@ -82,7 +103,35 @@
                     <a-plane position="0 1 0" rotation="0 0 0" geometry="width: 7.3; height: 6.8" material="color: #FFA500; opacity: 0.7"></a-plane>
                     <a-circle position="3 3.8 0.05" id="close1" radius="0.35" material="src: #close1; opacity:1" geometry="" class="clickable"></a-circle>
                     <a-image src="#imgFisica" position="0 2.3 0.03" geometry="width: 6.8; height: 3.7" material=""></a-image>
-                    <a-text position="0 -0.1 0.01" value="Es cualquier acto que inflige daño no accidental, usando la fuerza física o algún tipo de arma u objeto que pueda provocar o no lesiones ya sean internas, externas, o ambas" align="center" color="black" width="7.2" text="wrapCount: 42; baseline: top; shader: msdf; negate: false;" font="https://raw.githubusercontent.com/mel091/lato-font/refs/heads/main/Lato-Regular-msdf.json"></a-text>
+                    <a-entity position="0 -0.5 0.01">
+
+                    <a-text value="Es cualquier acto que hace daño intencionado, usando la fuerza física o algún tipo de arma u objeto que pueda provocar o no lesiones ya sean internas, externas, o ambas."
+                            align="center" 
+                            color="black" 
+                            width="7.2" 
+                            position="0 0.7 0"
+                            text="wrapCount: 35; baseline: top; shader: msdf; negate: false;" 
+                            font="https://raw.githubusercontent.com/mel091/lato-font/refs/heads/main/Lato-Regular-msdf.json">
+                    </a-text>
+                    
+                    <a-text value="Recuerda respetarte y respetar a las demas personas."
+                            align="center" 
+                            color="black" 
+                            width="7.2" 
+                            position="0 -1.03 0"
+                            text="wrapCount: 35; baseline: top; shader: msdf; negate: false;" 
+                            font="https://raw.githubusercontent.com/mel091/lato-font/refs/heads/main/Lato-Regular-msdf.json">
+                    </a-text>
+                     <a-text value="Recuerda respetarte y respetar a las demas personas."
+                            align="center" 
+                            color="black" 
+                            width="7.2" 
+                            position="0 -1.03 0"
+                            text="wrapCount: 35; baseline: top; shader: msdf; negate: false;" 
+                            font="https://raw.githubusercontent.com/mel091/lato-font/refs/heads/main/Lato-Regular-msdf.json">
+                    </a-text>
+                
+                    </a-entity>
                 </a-entity>
 
                 <a-video id="open2" position="4.5 -1 5" rotation="75 20 10" src="#video" material="opacity:0.8" visible="true" visibilidad="openImageId: open2; imageId: patrimonial; closeId: close2" geometry="width: 2.5; height: 2.5" class="clickable"></a-video>
@@ -90,25 +139,55 @@
                     <a-plane position="0 1 0" rotation="0 0 0" geometry="width: 7.5; height: 8.3" material="color: #FF7F00; opacity: 0.7"></a-plane>
                     <a-circle position="3.12 4.3 0.05" id="close2" radius="0.35" material="src: #close1; opacity:1" geometry="" class="clickable"></a-circle>
                     <a-image src="#imgPatrimonial" position="0 2.8 0.03" geometry="width: 7; height: 4" material=""></a-image>
-                    <a-text position="0 0.3 0.01" value="Es cualquier acto u omisión que afecta la supervivencia de la víctima. Se manifiesta en: la transformación, sustracción, destrucción, retención o distracción de objetos, documentos personales, bienes y valores, derechos patrimoniales o recursos económicos destinados a satisfacer sus necesidades y puede abarcar los daños a los bienes comunes o propios de la víctima." align="center" color="black" width="7.2" text="wrapCount: 42; baseline: top; shader: msdf; negate: false;" font="https://raw.githubusercontent.com/mel091/lato-font/refs/heads/main/Lato-Regular-msdf.json"></a-text>
+                    <a-entity position="0 0.5 0.01">
+
+                        <a-text value="Es cualquier acto u omisión que afecta la supervivencia de la víctima. Se manifiesta cuando se esconden o quitan objetos, documentos personales, bienes y valores o recursos económicos destinados a satisfacer las necesidades de la víctima." align="center" color="black" width="7.2" position="0 0 0" text="wrapCount: 35; baseline: top; shader: msdf; negate: false;" font="https://raw.githubusercontent.com/mel091/lato-font/refs/heads/main/Lato-Regular-msdf.json">
+                        </a-text>
+                        
+                        <a-text value="Recuerda respetarte y respetar a las demas personas." align="center" color="black" width="7.2" position="0 -2.55 0" text="wrapCount: 35; baseline: top; shader: msdf; negate: false;" font="https://raw.githubusercontent.com/mel091/lato-font/refs/heads/main/Lato-Regular-msdf.json">
+                        </a-text>
+                    
+                        <a-text value="Recuerda respetarte y respetar a las demas personas." align="center" color="black" width="7.2" position="0 -2.55 0" text="wrapCount: 35; baseline: top; shader: msdf; negate: false;" font="https://raw.githubusercontent.com/mel091/lato-font/refs/heads/main/Lato-Regular-msdf.json">
+                        </a-text>
+                    </a-entity>
                 </a-entity>
 
                 <a-video id="open3" position="-4 -1 4.5" rotation="80 -30 0.000" src="#video" material="opacity:0.8" visible="true" visibilidad="openImageId: open3; imageId: economica; closeId: close3" geometry="width: 2.7; height: 2.7" class="clickable"></a-video>
                 <a-entity id="economica" position="-4.5 1 8" rotation="0.000 -220 0.000" visible="false">
-                    <a-plane position="0 1 0" rotation="0 0 0" geometry="width: 7.5; height: 6.8" material="color: #E63946; opacity: 0.7"></a-plane>
-                    <a-circle position="3 3.8 0.05" id="close3" radius="0.35" material="src: #close1; opacity:1" geometry="" class="clickable"></a-circle>
-                    <a-image src="#imgEconomica" position="0 2.3 0.03" geometry="width: 6.8; height: 3.7" material=""></a-image>
-                    <a-text position="0 0 0.01" value="Es toda acción u omisión del Agresor que afecta la supervivencia económica de la víctima. Se manifiesta a través de limitaciones encaminadas a controlar el ingreso de sus percepciones económicas, así como la percepción de un salario menor por igual trabajo, dentro de un mismo centro laboral" align="center" color="white" width="7.2" text="wrapCount: 42; baseline: top; shader: msdf; negate: false;" font="https://raw.githubusercontent.com/mel091/lato-font/refs/heads/main/Lato-Regular-msdf.json"></a-text>
+                    <a-plane position="0 1 0" rotation="0 0 0" geometry="width: 7.5; height: 8.3" material="color: #E63946; opacity: 0.7"></a-plane>
+                    <a-circle position="3.12 4.3 0.05" id="close3" radius="0.35" material="src: #close1; opacity:1" geometry="" class="clickable"></a-circle>
+                    <a-image src="#imgEconomica" position="0 2.8 0.03" geometry="width: 7; height: 4" material=""></a-image>
+                   <a-entity position="0 -0.5 0.01">
+
+                    <a-text value="Es toda acción u omisión del Agresor que afecta la supervivencia económica de la víctima. Limitaciones y control del ingreso económico, así como recibir un salario menor por igual trabajo, dentro de un mismo centro laboral." align="center" color="black" width="7.2" position="0 0.9 0" text="wrapCount: 35; baseline: top; shader: msdf; negate: false;" font="https://raw.githubusercontent.com/mel091/lato-font/refs/heads/main/Lato-Regular-msdf.json">
+                    </a-text>
+                    
+                    <a-text value="Recuerda respetarte y respetar a las demas personas." align="center" color="black" width="7.2" position="0 -1.6 0" text="wrapCount: 35; baseline: top; shader: msdf; negate: false;" font="https://raw.githubusercontent.com/mel091/lato-font/refs/heads/main/Lato-Regular-msdf.json">
+                    </a-text>
+                     <a-text value="Recuerda respetarte y respetar a las demas personas." align="center" color="black" width="7.2" position="0 -1.6 0" text="wrapCount: 35; baseline: top; shader: msdf; negate: false;" font="https://raw.githubusercontent.com/mel091/lato-font/refs/heads/main/Lato-Regular-msdf.json">
+                    </a-text>
+                
+                    </a-entity>
                 </a-entity>
 
                 <a-video id="open4" position="-6 -1 0" rotation="80 -70 0.000" src="#video" material="opacity:0.8" visible="true" visibilidad="openImageId: open4; imageId: sexual; closeId: close4" geometry="width: 2.5; height: 2.5" class="clickable"></a-video>
                 <a-entity id="sexual" position="-8.5 1 0" rotation="0.000 90 0.000" visible="false">
-                    <a-plane position="0 1 0" rotation="0 0 0" geometry="width: 7.5; height: 6.8" material="color: #B30000; opacity: 0.7"></a-plane>
-                    <a-circle position="3 3.8 0.05" id="close4" radius="0.35" material="src: #close1; opacity:1" geometry="" class="clickable"></a-circle>
-                    <a-image src="#imgSexual" position="0 2.3 0.03" geometry="width: 6.8; height: 3.7" material=""></a-image>
-                    <a-text position="0 -0.1 0.01" value="Es cualquier acto que degrada o daña el cuerpo y/o la sexualidad de la Víctima y que por tanto atenta contra su libertad, dignidad e integridad física. Es una expresión de abuso de poder que implica la supremacía masculina sobre la mujer, al denigrarla y concebirla como objeto." align="center" color="white" width="7.2" text="wrapCount: 42; baseline: top; shader: msdf; negate: false;" font="https://raw.githubusercontent.com/mel091/lato-font/refs/heads/main/Lato-Regular-msdf.json"></a-text>
+                    <a-plane position="0 1 0" rotation="0 0 0" geometry="width: 7.5; height: 8.3" material="color: #B30000; opacity: 0.7"></a-plane>
+                    <a-circle position="3.12 4.3 0.05" id="close4" radius="0.35" material="src: #close1; opacity:1" geometry="" class="clickable"></a-circle>
+                    <a-image src="#imgSexual" position="0 2.8 0.03" geometry="width: 7; height: 4" material=""></a-image>
+                    <a-entity position="0 -0.5 0.01">
+                        <a-text value="Es cualquier acto que daña el cuerpo y/o la sexualidad de la Víctima y que por tanto atenta contra su libertad, dignidad e integridad física. Suele ser un abuso de poder que implica la supremacía masculina sobre la mujer, al denigrarla y concebirla como objeto" align="center" color="black" width="7.2" position="0 0.9 0" text="wrapCount: 35; baseline: top; shader: msdf; negate: false;" font="https://raw.githubusercontent.com/mel091/lato-font/refs/heads/main/Lato-Regular-msdf.json">
+                        </a-text>
+                        
+                        <a-text value="Recuerda respetarte y respetar a las demas personas." align="center" color="black" width="7.2" position="0 -1.7 0" text="wrapCount: 35; baseline: top; shader: msdf; negate: false;" font="https://raw.githubusercontent.com/mel091/lato-font/refs/heads/main/Lato-Regular-msdf.json">
+                        </a-text>
+                        <a-text value="Recuerda respetarte y respetar a las demas personas." align="center" color="black" width="7.2" position="0 -1.7 0" text="wrapCount: 35; baseline: top; shader: msdf; negate: false;" font="https://raw.githubusercontent.com/mel091/lato-font/refs/heads/main/Lato-Regular-msdf.json">
+                        </a-text>
+                    </a-entity>
                 </a-entity>
+            
             </a-entity>
+             </a-entity>
 
             <a-entity id="group-point3" scale="0 0 0">
                 <a-image class="atras clickable" spot="linkto:#point2;spotgroup:group-point2" position="0.5 -0.9 3" rotation="90 60 142" src="#atras" material="opacity:0.8" geometry="width:1.8; height: 1.3" look-at="#cam"></a-image>
@@ -116,34 +195,109 @@
                 
                 <a-video id="open5" position="3.7 -1 -3" rotation="90 120 0.000" src="#video" material="opacity:0.8" visible="true" visibilidad="openImageId: open5; imageId: familiar; closeId: close5" geometry="width: 2.6; height: 2.6" class="clickable"></a-video>
                 <a-entity id="familiar" position="6 1 -5" rotation="0.000 -60 0.000" visible="false">
-                    <a-plane position="0 1 0" rotation="0 0 0" geometry="width: 7.3; height: 6.8" material="color: black; opacity: 0.7"></a-plane>
-                    <a-circle position="3 3.8 0.05" id="close5" radius="0.35" material="src: #close1; opacity:1" geometry="" class="clickable"></a-circle>
-                    <a-image src="#imgFisica" position="0 2.3 0.03" geometry="width: 6.8; height: 3.7" material=""></a-image>
-                    <a-text position="0 -0.1 0.01" value="La violencia familiar es el uso de la fuerza física o psicológica para controlar, manipular o agredir a un miembro de la familia. Puede ser física, sexual, psicológica, económica o patrimonial" align="center" color="white" width="7.2" text="wrapCount: 42; baseline: top; shader: msdf; negate: false;" font="https://raw.githubusercontent.com/mel091/lato-font/refs/heads/main/Lato-Regular-msdf.json"></a-text>
+                    <a-plane position="0 1 0" rotation="0 0 0" geometry="width: 7.5; height: 8.3" material="color: black; opacity: 0.7"></a-plane>
+                    <a-circle position="3.12 4.3 0.05" id="close5" radius="0.35" material="src: #close1; opacity:1" geometry="" class="clickable"></a-circle>
+                    <a-image src="#imgFisica" position="0 2.8 0.03" geometry="width: 7; height: 4" material=""></a-image>
+                    <a-entity position="0 -0.65 0.01">
+                    <a-text value="Es el uso de la fuerza física (jalones, golpes) o psicológica (insultos, humillaciones) en contra de un familiar. Puede ser física, sexual, psicológica, económica o patrimonial."
+                            align="center" 
+                            color="white" 
+                            width="7.2" 
+                            position="0 0.7 0"
+                            text="wrapCount: 35; baseline: top; shader: msdf; negate: false;" 
+                            font="https://raw.githubusercontent.com/mel091/lato-font/refs/heads/main/Lato-Regular-msdf.json">
+                    </a-text>
+                    
+                    <a-text value="Recuerda respetarte y respetar a las demas personas."
+                            align="center" 
+                            color="white" 
+                            width="7.2" 
+                            position="0 -1.03 0"
+                            text="wrapCount: 35; baseline: top; shader: msdf; negate: false;" 
+                            font="https://raw.githubusercontent.com/mel091/lato-font/refs/heads/main/Lato-Regular-msdf.json">
+                    </a-text>
+                     <a-text value="Recuerda respetarte y respetar a las demas personas."
+                            align="center" 
+                            color="white" 
+                            width="7.25" 
+                            position="0 -1.03 0.02"
+                            text="wrapCount: 35; baseline: top; shader: msdf; negate: false;" 
+                            font="https://raw.githubusercontent.com/mel091/lato-font/refs/heads/main/Lato-Regular-msdf.json">
+                    </a-text>
+                
+                    </a-entity>
                 </a-entity>
 
                 <a-video id="open6" position="5.3 -1 2.5" rotation="75 20 10" src="#video" material="opacity:0.8" visible="true" visibilidad="openImageId: open6; imageId: laboral; closeId: close6" geometry="width: 2.5; height: 2.5" class="clickable"></a-video>
                 <a-entity id="laboral" position="7 1 4" rotation="0.000 -110 0.000" visible="false">
-                    <a-plane position="0 1 0" rotation="0 0 0" geometry="width: 7.3; height: 6.8" material="color: black; opacity: 0.7"></a-plane>
-                    <a-circle position="3 3.5 0.05" id="close6" radius="0.35" material="src: #close1; opacity:1" geometry="" class="clickable"></a-circle>
-                    <a-image src="#imgPatrimonial" position="0 2.1 0.03" geometry="width: 6.8; height: 3.7" material=""></a-image>
-                    <a-text position="0 -0.2 0.01" value="La violencia laboral es un abuso de poder que se ejerce en el ámbito laboral, ya sea de forma física, verbal, psicológica o sexual. Puede ocurrir entre compañeros o entre un superior y un subordinado." align="center" color="white" width="7.2" text="wrapCount: 42; baseline: top; shader: msdf; negate: false;" font="https://raw.githubusercontent.com/mel091/lato-font/refs/heads/main/Lato-Regular-msdf.json"></a-text>
+                    <a-plane position="0 1 0" rotation="0 0 0" geometry="width: 7.5; height: 8.3" material="color: black; opacity: 0.7"></a-plane>
+                    <a-circle position="3.12 4.3 0.05" id="close6" radius="0.35" material="src: #close1; opacity:1" geometry="" class="clickable"></a-circle>
+                    <a-image src="#imgPatrimonial" position="0 2.8 0.03" geometry="width: 7; height: 4" material=""></a-image>
+                    <a-entity position="0 -0.8 0.01">
+
+                    <a-text value="Es un abuso de poder que se ejerce en el ámbito laboral (trabajo), ya sea de forma física, verbal, psicológica o sexual." align="center" color="white" width="7.2" position="0 0.7 0" text="wrapCount: 35; baseline: top; shader: msdf; negate: false;" font="https://raw.githubusercontent.com/mel091/lato-font/refs/heads/main/Lato-Regular-msdf.json">
+                    </a-text>
+                    
+                    <a-text value="Recuerda respetarte y respetar a las demas personas." align="center" color="white" width="7.2" position="0 -0.55 0" text="wrapCount: 35; baseline: top; shader: msdf; negate: false;" font="https://raw.githubusercontent.com/mel091/lato-font/refs/heads/main/Lato-Regular-msdf.json">
+                    </a-text>
+                     <a-text value="Recuerda respetarte y respetar a las demas personas." align="center" color="white" width="7.25" position="0 -0.55 0.02" text="wrapCount: 35; baseline: top; shader: msdf; negate: false;" font="https://raw.githubusercontent.com/mel091/lato-font/refs/heads/main/Lato-Regular-msdf.json">
+                    </a-text>
+                
+                    </a-entity>
                 </a-entity>
 
                 <a-video id="open7" position="-4.3 -1 4" rotation="80 -30 0.000" src="#video" material="opacity:0.8" visible="true" visibilidad="openImageId: open7; imageId: docente; closeId: close7" geometry="width: 2.7; height: 2.7" class="clickable"></a-video>
                 <a-entity id="docente" position="-4.5 1 6" rotation="0.000 -220 0.000" visible="false">
-                    <a-plane position="0 1 0" rotation="0 0 0" geometry="width: 7.5; height: 6.8" material="color: black; opacity: 0.7"></a-plane>
-                    <a-circle position="3 3.8 0.05" id="close7" radius="0.35" material="src: #close1; opacity:1" geometry="" class="clickable"></a-circle>
-                    <a-image src="#imgEconomica" position="0 2.3 0.03" geometry="width: 6.8; height: 3.7" material=""></a-image>
-                    <a-text position="0 0 0.01" value="Aquellas conductas que dañen la autoestima de las alumnas con actos de discriminación por su sexo, edad, condición social, académica, limitaciones y/o características físicas, que les infligen maestras o maestros." align="center" color="white" width="7.2" text="wrapCount: 42; baseline: top; shader: msdf; negate: false;" font="https://raw.githubusercontent.com/mel091/lato-font/refs/heads/main/Lato-Regular-msdf.json"></a-text>
+                    <a-plane position="0 1 0" rotation="0 0 0" geometry="width: 7.5; height: 8.3" material="color: black; opacity: 0.7"></a-plane>
+                    <a-circle position="3.12 4.3 0.05" id="close7" radius="0.35" material="src: #close1; opacity:1" geometry="" class="clickable"></a-circle>
+                    <a-image src="#imgEconomica" position="0 2.8 0.03" geometry="width: 7; height: 4" material=""></a-image>
+                    <a-entity position="0 -0.5 0.01">
+
+                    <a-text value="Son aquellas conductas que dañen la autoestima de las alumnas con actos de discriminación por su sexo, edad, condición social y/o características físicas, hecha por maestras o maestros." align="center" color="white" width="7.2" position="0 0.7 0" text="wrapCount: 35; baseline: top; shader: msdf; negate: false;" font="https://raw.githubusercontent.com/mel091/lato-font/refs/heads/main/Lato-Regular-msdf.json">
+                    </a-text>
+                    
+                    <a-text value="Recuerda respetarte y respetar a las demas personas." align="center" color="white" width="7.2" position="0 -1.4 0" text="wrapCount: 35; baseline: top; shader: msdf; negate: false;" font="https://raw.githubusercontent.com/mel091/lato-font/refs/heads/main/Lato-Regular-msdf.json">
+                    </a-text>
+                     <a-text value="Recuerda respetarte y respetar a las demas personas." align="center" color="white" width="7.25" position="0 -1.4 0.02" text="wrapCount: 35; baseline: top; shader: msdf; negate: false;" font="https://raw.githubusercontent.com/mel091/lato-font/refs/heads/main/Lato-Regular-msdf.json">
+                    </a-text>
+                
+                    </a-entity>
                 </a-entity>
 
                 <a-video id="open8" position="-5.3 -1 -2" rotation="80 -70 0.000" src="#video" material="opacity:0.8" visible="true" visibilidad="openImageId: open8; imageId: comunitaria; closeId: close8" geometry="width: 2.5; height: 2.5" class="clickable"></a-video>
                 <a-entity id="comunitaria" position="-8 1 -2" rotation="0.000 80 0.000" visible="false">
-                    <a-plane position="0 1 0" rotation="0 0 0" geometry="width: 7.5; height: 6.8" material="color: black; opacity: 0.7"></a-plane>
-                    <a-circle position="3 3.8 0.05" id="close8" radius="0.35" material="src: #close1; opacity:1" geometry="" class="clickable"></a-circle>
-                    <a-image src="#imgSexual" position="0 2.3 0.03" geometry="width: 6.8; height: 3.7" material=""></a-image>
-                    <a-text position="0 -0.1 0.01" value="La violencia comunitaria es un conjunto de actos de violencia que ocurren en espacios públicos, cometidos por personas que no están relacionadas entre sí. Puede ser individual o colectiva." align="center" color="white" width="7.2" text="wrapCount: 42; baseline: top; shader: msdf; negate: false;" font="https://raw.githubusercontent.com/mel091/lato-font/refs/heads/main/Lato-Regular-msdf.json"></a-text>
+                    <a-plane position="0 1 0" rotation="0 0 0" geometry="width: 7.5; height: 8.3" material="color: black; opacity: 0.7"></a-plane>
+                    <a-circle position="3.12 4.3 0.05" id="close8" radius="0.35" material="src: #close1; opacity:1" geometry="" class="clickable"></a-circle>
+                    <a-image src="#imgSexual" position="0 2.8 0.03" geometry="width: 7; height: 4" material=""></a-image>
+                    <a-entity position="0 -0.5 0.01">
+
+                    <a-text value="Es un conjunto de actos de violencia que ocurren en espacios públicos (calle, parques), cometidos por personas que no están relacionadas entre sí."
+                            align="center" 
+                            color="white" 
+                            width="7.2" 
+                            position="0 0.7 0"
+                            text="wrapCount: 35; baseline: top; shader: msdf; negate: false;" 
+                            font="https://raw.githubusercontent.com/mel091/lato-font/refs/heads/main/Lato-Regular-msdf.json">
+                    </a-text>
+                    
+                    <a-text value="Recuerda respetarte y respetar a las demas personas."
+                            align="center" 
+                            color="white" 
+                            width="7.2" 
+                            position="0 -1.03 0"
+                            text="wrapCount: 35; baseline: top; shader: msdf; negate: false;" 
+                            font="https://raw.githubusercontent.com/mel091/lato-font/refs/heads/main/Lato-Regular-msdf.json">
+                    </a-text>
+                     <a-text value="Recuerda respetarte y respetar a las demas personas."
+                            align="center" 
+                            color="white" 
+                            width="7.25" 
+                            position="0 -1.03 0.02"
+                            text="wrapCount: 35; baseline: top; shader: msdf; negate: false;" 
+                            font="https://raw.githubusercontent.com/mel091/lato-font/refs/heads/main/Lato-Regular-msdf.json">
+                    </a-text>
+                
+                    </a-entity>
                 </a-entity>
             </a-entity>
 
