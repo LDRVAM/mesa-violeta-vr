@@ -44,6 +44,7 @@
             <img id="areaPsico" src="images/areaPsico.jpeg" alt="areas">
             <img id="areaMin" src="images/areaMin.jpeg" alt="areas">
             <img id="areaSalud" src="images/areaSalud.jpeg" alt="areas">
+            <video id="violento" loop src="images/violentometro.mp4"></video>
         </a-assets>
 
         <!-- Añadido: Control de láser para interacción -->
@@ -312,9 +313,34 @@
                     <a-circle position="4 5.3 0.04" id="close9" radius="0.4" material="src: #close1; opacity:1" geometry="" class="clickable"></a-circle>
                     <a-image src="#areaSalud" position="0 3.3 0.03" geometry="width: 9.2; height: 5" material=""></a-image>
                     <a-text position="0 0 0.01" value="Área de salud" align="center" color="white" width="9.5" text="wrapCount: 30; baseline: top; negate: false;" font="https://raw.githubusercontent.com/mel091/lato-font/refs/heads/main/Lato-Regular-msdf.json"></a-text>
-                    <a-text position="0 -1 0.01" value="Cuando una mujer requiere atención médica de urgencia, es atendida por personal del sector de 
-                    salud que se encuentra físicamente en nuestras instalaciones, quien le proporciona las primeras 
-                    atenciones." align="center" color="white" width="9.5" text="wrapCount: 50; baseline: top; shader: msdf; negate: false;" font="https://raw.githubusercontent.com/mel091/lato-font/refs/heads/main/Lato-Regular-msdf.json"></a-text>
+                    <a-entity position="0 -2 0.01">
+                    <a-text value="Brinda atención médica de urgencia a una mujer victima sus hijas e hijos."
+                            align="center" 
+                            color="white" 
+                            width="7.2" 
+                            position="0 0.7 0"
+                            text="wrapCount: 35; baseline: top; shader: msdf; negate: false;" 
+                            font="https://raw.githubusercontent.com/mel091/lato-font/refs/heads/main/Lato-Regular-msdf.json">
+                    </a-text>
+                    
+                    <a-text value="El Centro de Justicia para Mujeres te cuida."
+                            align="center" 
+                            color="white" 
+                            width="7.2" 
+                            position="0 -0.2 0"
+                            text="wrapCount: 35; baseline: top; shader: msdf; negate: false;" 
+                            font="https://raw.githubusercontent.com/mel091/lato-font/refs/heads/main/Lato-Regular-msdf.json">
+                    </a-text>
+                     <a-text value="El Centro de Justicia para Mujeres te cuida."
+                            align="center" 
+                            color="white" 
+                            width="7.25" 
+                            position="0 -0.2 0.02"
+                            text="wrapCount: 35; baseline: top; shader: msdf; negate: false;" 
+                            font="https://raw.githubusercontent.com/mel091/lato-font/refs/heads/main/Lato-Regular-msdf.json">
+                    </a-text>
+                
+                    </a-entity>
                 </a-entity>
 
                 <a-video id="open10" position="-6 -2.2 -3" rotation="90 -60 0.000" src="#video" material="opacity:0.8" visible="true" visibilidad="openImageId: open10; imageId: ministerio; closeId: close10" geometry="width: 2.5; height: 2.5" class="clickable"></a-video>
@@ -323,7 +349,17 @@
                     <a-circle position="4 5.3 0.04" id="close10" radius="0.4" material="src: #close1; opacity:1" geometry="" class="clickable"></a-circle>
                     <a-image src="#areaMin" position="0 3.3 0.03" geometry="width: 9.2; height: 5" material=""></a-image>
                     <a-text position="0 0.35 0.01" value="Área de ministerio público especializado" align="center" color="white" width="9.5" text="wrapCount: 30; baseline: top; negate: false;" font="https://raw.githubusercontent.com/mel091/lato-font/refs/heads/main/Lato-Regular-msdf.json"></a-text>
-                    <a-text position="0 -1 0.01" value="Los delitos de género contra mujeres son investigados por un equipo especializado de Ministerios Públicos, médicos legistas, policías y psicólogas. Su prioridad es garantizar la seguridad de las víctimas y sus hijos mediante un Protocolo de Medidas de Protección, que asegura su derecho a una vida libre de violencia, incluyendo restricciones para el agresor, desde advertencias hasta su desalojo del domicilio." align="center" color="white" width="9.5" text="wrapCount: 50; baseline: top; shader: msdf; negate: false;" font="https://raw.githubusercontent.com/mel091/lato-font/refs/heads/main/Lato-Regular-msdf.json"></a-text>
+
+                    <a-entity position="0 -2 0.01">
+                    <a-text value="Equipo que investiga los delitos contra mujeres. Garantizar la seguridad de las víctimas y sus hijas e hijos." align="center" color="white" width="7.2" position="0 0.7 0" text="wrapCount: 35; baseline: top; shader: msdf; negate: false;" font="https://raw.githubusercontent.com/mel091/lato-font/refs/heads/main/Lato-Regular-msdf.json">
+                    </a-text>
+                    
+                    <a-text value="El Centro de Justicia para Mujeres te cuida." align="center" color="white" width="7.2" position="0 -0.6 0" text="wrapCount: 35; baseline: top; shader: msdf; negate: false;" font="https://raw.githubusercontent.com/mel091/lato-font/refs/heads/main/Lato-Regular-msdf.json">
+                    </a-text>
+                     <a-text value="El Centro de Justicia para Mujeres te cuida." align="center" color="white" width="7.25" position="0 -0.6 0.02" text="wrapCount: 35; baseline: top; shader: msdf; negate: false;" font="https://raw.githubusercontent.com/mel091/lato-font/refs/heads/main/Lato-Regular-msdf.json">
+                    </a-text>
+                
+                    </a-entity>
                 </a-entity>
             </a-entity>
 
@@ -338,7 +374,34 @@
                     <a-circle position="4 5.3 0.04" id="close11" radius="0.4" material="src: #close1; opacity:1" geometry="" class="clickable"></a-circle>
                     <a-image src="#areaMin" position="0 3.3 0.03" geometry="width: 9.2; height: 5" material=""></a-image>
                     <a-text position="0 0 0.01" value="Área de trabajo social" align="center" color="white" width="9.5" text="wrapCount: 30; baseline: top; negate: false;" font="https://raw.githubusercontent.com/mel091/lato-font/refs/heads/main/Lato-Regular-msdf.json"></a-text>
-                    <a-text position="0 -1 0.01" value="Las trabajadoras sociales dan seguimiento a los casos para asegurar que las víctimas de violencia completen trámites, continúen estudios, accedan a empleo y terminen terapias. Dado que enfrentan factores externos que pueden hacerlas abandonar el proceso, es clave mantener contacto mediante llamadas y visitas para verificar su estado y garantizar su seguridad." align="center" color="white" width="9.5" text="wrapCount: 50; baseline: top; shader: msdf; negate: false;" font="https://raw.githubusercontent.com/mel091/lato-font/refs/heads/main/Lato-Regular-msdf.json"></a-text>
+                    <a-entity position="0 -1.5 0.01">
+                    <a-text value="Dan seguimiento a los casos para asegurar que las víctimas reciban información, completen trámites, continúen estudios, accedan a empleo y terminen terapias."
+                            align="center" 
+                            color="white" 
+                            width="7.2" 
+                            position="0 0.7 0"
+                            text="wrapCount: 35; baseline: top; shader: msdf; negate: false;" 
+                            font="https://raw.githubusercontent.com/mel091/lato-font/refs/heads/main/Lato-Regular-msdf.json">
+                    </a-text>
+                    
+                    <a-text value="El Centro de Justicia para Mujeres te cuida."
+                            align="center" 
+                            color="white" 
+                            width="7.2" 
+                            position="0 -1 0"
+                            text="wrapCount: 35; baseline: top; shader: msdf; negate: false;" 
+                            font="https://raw.githubusercontent.com/mel091/lato-font/refs/heads/main/Lato-Regular-msdf.json">
+                    </a-text>
+                     <a-text value="El Centro de Justicia para Mujeres te cuida."
+                            align="center" 
+                            color="white" 
+                            width="7.25" 
+                            position="0 -1 0.02"
+                            text="wrapCount: 35; baseline: top; shader: msdf; negate: false;" 
+                            font="https://raw.githubusercontent.com/mel091/lato-font/refs/heads/main/Lato-Regular-msdf.json">
+                    </a-text>
+                
+                    </a-entity>
                 </a-entity>
             
                 <a-video id="open12" position="-5 -2.2 3" rotation="90 150 0.000" src="#video" material="opacity:0.8" visible="true" visibilidad="openImageId: open12; imageId: juridica; closeId: close12" geometry="width: 2.5; height: 2.5" class="clickable"></a-video>
@@ -347,7 +410,16 @@
                     <a-circle position="4 5.3 0.04" id="close12" radius="0.4" material="src: #close1; opacity:1" geometry="" class="clickable"></a-circle>
                     <a-image src="#areaMin" position="0 3.3 0.03" geometry="width: 9.2; height: 5" material=""></a-image>
                     <a-text position="0 0 0.01" value="Área jurídica" align="center" color="white" width="9.5" text="wrapCount: 30; baseline: top; negate: false;" font="https://raw.githubusercontent.com/mel091/lato-font/refs/heads/main/Lato-Regular-msdf.json"></a-text>
-                    <a-text position="0 -1 0.01" value="Un equipo de abogados especialistas en materia de derecho familiar, gratuitamente ofrecen servicios jurídicos a las mujeres que sufren violencia.\n\nSus servicios incluyen trámites de:\n  - Divorcios              -Pensiones Alimenticias\n -Custodia de menores         -Entre otros." align="center" color="white" width="9.5" text="wrapCount: 50; baseline: top; shader: msdf; negate: false;" font="https://raw.githubusercontent.com/mel091/lato-font/refs/heads/main/Lato-Regular-msdf.json"></a-text>
+                    <a-entity position="0 -1.7 0.01">
+                    <a-text value="Ofrecen asesoria y acompañamiento a las victimas en el tema de Leyes que le protegen a ella y a sus hijas e hijos." align="center" color="white" width="7.2" position="0 0.7 0" text="wrapCount: 35; baseline: top; shader: msdf; negate: false;" font="https://raw.githubusercontent.com/mel091/lato-font/refs/heads/main/Lato-Regular-msdf.json">
+                    </a-text>
+                    
+                    <a-text value="El Centro de Justicia para Mujeres te cuida." align="center" color="white" width="7.2" position="0 -0.6 0" text="wrapCount: 35; baseline: top; shader: msdf; negate: false;" font="https://raw.githubusercontent.com/mel091/lato-font/refs/heads/main/Lato-Regular-msdf.json">
+                    </a-text>
+                     <a-text value="El Centro de Justicia para Mujeres te cuida." align="center" color="white" width="7.25" position="0 -0.6 0.02" text="wrapCount: 35; baseline: top; shader: msdf; negate: false;" font="https://raw.githubusercontent.com/mel091/lato-font/refs/heads/main/Lato-Regular-msdf.json">
+                    </a-text>
+                
+                    </a-entity>
                 </a-entity>
             </a-entity>
            
@@ -388,11 +460,11 @@
                     <a-text position="0 -1 0.01" value="Para las víctimas de violencia, la independencia económica es clave para romper el vínculo con el agresor. Por ello, los Centros de Justicia ofrecen una bolsa de trabajo con oportunidades acordes a su perfil y capacitación mediante cursos y talleres. Para más información sobre vacantes y formación, se les invita a acudir al Centro de Justicia para las Mujeres." align="center" color="white" width="9.5" text="wrapCount: 50; baseline: top; shader: msdf; negate: false;" font="https://raw.githubusercontent.com/mel091/lato-font/refs/heads/main/Lato-Regular-msdf.json"></a-text>
                 </a-entity>
                 
-                <a-video id="open17" position="-2.7 -3 -8.7" rotation="90 150 0.000" src="#video" material="opacity:0.8" visible="true" visibilidad="openImageId: open17; imageId: violento; closeId: close17" geometry="width: 2.5; height: 2.5" class="clickable"></a-video>
-                <a-entity id="violento" position="-9.4 0.8 -8" rotation="0.000 20 0.000" visible="false">
-                    <a-plane position="0 1 0" rotation="0 0 0" geometry="width: 9; height: 10" material="color: black; opacity: 0.8"></a-plane>
-                    <a-circle position="4 5.3 0.04" id="close17" radius="0.4" material="src: #close1; opacity:1" geometry="" class="clickable"></a-circle>
-                    <a-image src="#violentometro" position="-0.5 1 0.03" geometry="width: 7.5; height: 8.5" material=""></a-image>
+                <a-video id="open17" position="-2.7 -3 -8.7" rotation="90 150 0.000" src="#video" material="opacity:0.8" visible="true" visibilidad="openImageId: open17; imageId: viol; closeId: close17;videoId: violento" geometry="width: 2.5; height: 2.5" class="clickable"></a-video>
+                <a-entity id="viol" position="-10 0.8 -8" rotation="0.000 20 0.000" visible="false">
+                    <a-plane position="0 2 0" rotation="0 0 0" geometry="width: 10; height: 6" material="color: black; opacity: 0.8"></a-plane>
+                    <a-circle position="4.2 4.2 0.04" id="close17" radius="0.4" material="src: #close1; opacity:1" geometry="" class="clickable"></a-circle>
+                    <a-video src="#violento" position="0 2 0.01" geometry="width: 9.5; height: 5.5" material=""></a-video>
                 </a-entity>
             </a-entity>
 
@@ -405,7 +477,34 @@
                     <a-circle position="4 5.3 0.04" id="close16" radius="0.4" material="src: #close1; opacity:1" geometry="" class="clickable"></a-circle>
                     <a-image src="#ludicaArea" position="0 3.3 0.03" geometry="width: 9.2; height: 5" material=""></a-image>
                     <a-text position="0 0 0.01" value="Área lúdica" align="center" color="white" width="9.5" text="wrapCount: 30; baseline: top; negate: false;" font="https://raw.githubusercontent.com/mel091/lato-font/refs/heads/main/Lato-Regular-msdf.json"></a-text>
-                    <a-text position="0 -1 0.01" value="El Área Lúdica del Centro de Justicia de la Mujer (CJM) ofrece un espacio seguro para que los hijos de las usuarias permanezcan mientras ellas reciben atención. A través de actividades de juego, psicólogas y especialistas en educación pueden detectar posibles afectaciones por violencia y determinar si necesitan atención especializada." align="center" color="white" width="9.5" text="wrapCount: 50; baseline: top; shader: msdf; negate: false;" font="https://raw.githubusercontent.com/mel091/lato-font/refs/heads/main/Lato-Regular-msdf.json"></a-text>
+                    <a-entity position="0 -1.5 0.01">
+                    <a-text value="Ofrece un espacio seguro para que las hijas e hijos de las usuarias permanezcan mientras ellas reciben atención. Con actividades de juego con psicólogas y especialistas en educación."
+                            align="center" 
+                            color="white" 
+                            width="7.2" 
+                            position="0 0.7 0"
+                            text="wrapCount: 35; baseline: top; shader: msdf; negate: false;" 
+                            font="https://raw.githubusercontent.com/mel091/lato-font/refs/heads/main/Lato-Regular-msdf.json">
+                    </a-text>
+                    
+                    <a-text value="El Centro de Justicia para Mujeres te cuida."
+                            align="center" 
+                            color="white" 
+                            width="7.2" 
+                            position="0 -1.5 0"
+                            text="wrapCount: 35; baseline: top; shader: msdf; negate: false;" 
+                            font="https://raw.githubusercontent.com/mel091/lato-font/refs/heads/main/Lato-Regular-msdf.json">
+                    </a-text>
+                     <a-text value="El Centro de Justicia para Mujeres te cuida."
+                            align="center" 
+                            color="white" 
+                            width="7.25" 
+                            position="0 -1.5 0.02"
+                            text="wrapCount: 35; baseline: top; shader: msdf; negate: false;" 
+                            font="https://raw.githubusercontent.com/mel091/lato-font/refs/heads/main/Lato-Regular-msdf.json">
+                    </a-text>
+                
+                    </a-entity>
                 </a-entity>
             </a-entity>
         </a-entity>

@@ -13,7 +13,9 @@ AFRAME.registerComponent('spot', {
         el.addEventListener('click', function(e) {
             const sky = document.querySelector('#sky');
             sky.setAttribute('src', data.linkto);
-
+            const vi = document.querySelector('#violento');
+            vi.currentTime = 0; 
+           vi.pause();
 
             const spotComp = document.querySelector('#spots');
             const currentSpot = this.parentElement.getAttribute('id');
